@@ -1,0 +1,19 @@
+---
+title: "The MOMOS model in R"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{The MOMOS model in R}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+---
+
+In this document explain how to use the `MOMOS` package.
+
+## Example
+
+How to execute the MOMOS function:
+
+```{r}
+library(momos)
+hello('hello','world')
+```
