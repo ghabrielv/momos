@@ -15,5 +15,6 @@ How to execute the MOMOS function:
 
 ```{r}
 library(momos)
-hello('hello','world')
+out <- momos(pars)
+print(out)
 ```
