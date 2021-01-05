@@ -35,35 +35,37 @@ momos <- function (params) {
   # Derivs
   derivs <- function(time, y, pars) {
     with (as.list(c(pars, y)), {
-      Fvl<- VL*Kvl
-      Fvs<- VS*Kvs
-      Fmor<- CM*Kmb
-      Resp<- CM*CM*Kresp/Co
-      Fhl<- HL*Khl
-      Fhls<- HL*Khls
-      Fhs<-HS*Khs
+      Fvl <- VL * Kvl
+      Fvs <- VS * Kvs
+      Fmor <- CM * Kmb
+      Resp <- CM * CM * Kresp / Co
+      Fhl <- HL * Khl
+      Fhls <- HL * Khls
+      Fhs <- HS * Khs
 
-      dVL<- -Fvl
-      dVS<- -Fvs
-      dCM<- Fvl+Fvs-Fmor-Resp+Fhl+Fhs
-      dHL<- Fmor-Fhl-Fhls
-      dHS<- Fhls-Fhs
-      dRA<- Resp
+      dVL <- -Fvl
+      dVS <- -Fvs
+      dCM <- Fvl + Fvs - Fmor - Resp + Fhl + Fhs
+      dHL <- Fmor - Fhl - Fhls
+      dHS <- Fhls - Fhs
+      dRA <- Resp
 
       return (list(c(dVL,  dVS, dCM, dHL, dHS, dRA)))
     })
   }
 
   # Set params
-  pars<- c( Kvl <- Kvl,
-            Kvs <- Kvs,
-            fs <- fs,
-            Khl <- Khl,
-            Khs <- Khs,
-            Khls <- Khls,
-            Kmb <- Kmb,
-            Kresp <- Kresp,
-            Ci <- Ci)
+  pars <- c(
+    Kvl <- Kvl,
+    Kvs <- Kvs,
+    fs <- fs,
+    Khl <- Khl,
+    Khs <- Khs,
+    Khls <- Khls,
+    Kmb <- Kmb,
+    Kresp <- Kresp,
+    Ci <- Ci
+  )
 
   Co <- Co
   HLo <- HLo
@@ -71,20 +73,27 @@ momos <- function (params) {
   Necromasa <- Necromasa
 
   # Integral
-  y <- c(VL=Necromasa*(1-fs),
-         VS=Necromasa*fs,
-         CM=Ci,
-         HL=HLo,
-         HS=HSo,
-         RA = 0 )
+  y <- c(
+    VL = Necromasa * (1 - fs),
+    VS = Necromasa * fs,
+    CM = Ci,
+    HL = HLo,
+    HS = HSo,
+    RA = 0
+  )
 
   # Execution time
   times <- seq(from = from, to = to, by = by)
 
   library(deSolve)
 
-  out <- ode(func = derivs, y = y,
-             parms = pars, times = times, method="rk4")
+  out <- ode(
+    func = derivs,
+    y = y,
+    parms = pars,
+    times = times,
+    method = "rk4"
+  )
 
   return(as.data.frame(out))
 
