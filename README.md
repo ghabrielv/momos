@@ -28,7 +28,7 @@ devtools::build()
 ```
 # Install package
 ```{r}
-install.packages("./momos_0.1.0.tar.gz", repos = NULL, type = "source")
+install.packages("./momos_0.2.0.tar.gz", repos = NULL, type = "source")
 ```
 # Send to CRAN
 `https://cran.r-project.org/submit.html`

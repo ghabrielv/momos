@@ -1,7 +1,7 @@
 Package: momos
 Type: Package
 Title: R package for simulation of the momos model in the discrimination of dynamic simulation models of biological processes
-Version: 0.1.0
+Version: 0.2.0
 Author: Ghabriel Villarreal <ghabrielv@gmail.com>, Alexis Valery <avaleryr@gmail.com>
 Maintainer: Rossana Timaure <rttg27@gmail.com>
 Description: It is a package that allows the simulation of the momos model in the discrimination of dynamic simulation models of biological processes.

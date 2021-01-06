@@ -5,10 +5,42 @@
 #' @return Table with the data
 #'
 #' @examples
+#' params <- list()
+#' params$Necromasa <- 2140
+#' params$HLo <- 2250
+#' params$HSo <- 19150
+#' params$Co <- 55.40
+#' params$Kvl <- 0.2070
+#' params$Kvs <- 0.00057
+#' params$fs <- 0.00002
+#' params$Khl <- 0.0638
+#' params$Khs <- 0.00077
+#' params$Khls <- 0.1581
+#' params$Kmb <- 0.001
+#' params$Kresp <- 0.1419
+#' params$Ci <- 50.04
+#' params$from <- 0
+#' params$to <- 30
+#' params$by <- 1
 #' out <- momos(params)
 #'
 #' @export
-momos <- function (params) {
+momos <- function (params = NULL) {
+
+  # Check if params are a list
+  if(is.list(params)) {
+    for(i in params) {
+      if(!is.numeric(i)) {
+        message("All elements must be numeric")
+        return(NA)
+      }
+    }
+  } else {
+    if(!is.null(params)) {
+      message("Parameters must be a list")
+      return(NA)
+    }
+  }
 
   # Initial values
   Necromasa <- ifelse("Necromasa" %in% names(params), params$Necromasa, 2140)
