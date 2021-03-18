@@ -1,0 +1,41 @@
+\chapter{Preliminares}
+
+\section{Planteamiento y formulaci\'on del problema}
+La materia orgánica estable del suelo (MOS) se caracteriza por ser el resultado del proceso de descomposición de los residuos de animales y vegetales, los cuales estos varían en proporción y estado. Estos residuos son sustancias que contribuyen a la fertilidad del suelo, por lo que, la MOS, viene a ser uno de los factores de importancia que determina localidad de un suelo.\\
+
+La descomposición de la materia orgánica es un proceso biológico que ocurre naturalmente, por efecto de diferentes grupos de organismos, entre los cuales destacan los microorganismos del suelo, que permiten transformar los diferentes residuos, en nutrientes básicos y energía. Siendo que una de las funciones MOS es actuar como depósito de carbono, permite que exista en el suelo más del doble del carbono contenido en la atmósfera, por lo que los cambios que experimente está, pueden tener un impacto en el equilibrio global, y por lo tanto un efecto sobre las condiciones climáticas del planeta, al ser considerado el carbono que sale como C)2 uno de los gases que contribuyen al efecto invernadero del planeta y al cambio climático (IPCC, 2000).\\
+
+En la actualidad, se reporta un incremento en el cambio climático por efecto del impacto antropogénico, el cual se observa en el aumento de la temperatura en diferentes regiones, y como efecto de retroalimentación la temperatura influye sobre el proceso de descomposición y por lo tanto en el almacenamiento de carbono en el suelo y en la vegetación (Andriulo, 2006), todo esto muestra que el suelo es un compartimiento complejo debido a todas las interrelaciones que existen en el mismos.\\
+
+Por lo que la comprensión de los diferentes procesos y transformaciones que ocurren en el suelo, son de gran importancia, sin embargo la cantidad de información que puede ser recolectada, así como la variabilidad en la misma, constituyen un desafío en sí, lo que hace utilizar herramientas tecnológicas que permitan el manejo de la información obtenida, es por ello que existe una gran cantidad de modelos que simulan y describen los procesos de la descomposición de la MOS, y los cueles pueden o están siendo acoplados a modelos de pronósticos a nivel global. de igual manera estos modelos están evolucionando, en la búsqueda de una mejor comprensión de los diversos procesos físico, químicos y biológicos [Larionova et al., 2007; Lomander et al., 1998].\\
+
+Existen una gran cantidad de modelos que estudian la MOS, muchos de los cuales están desarrollados sobre plataformas propias, lo cual no permite el proceso de enseñanza-aprendizaje, así como, de investigación en el desarrollo de mejoras al mismo por otros investigadores. por otra parte, existen herramientas en donde se han desarrollado de manera práctica modelos, como por ejemplo el modelo MOMOS (Materia Organica y MicroOrganismos del Suelo), el cual ha sido calibrado y validado con datos e información de un estudio en un gradiente altitudinal tropical [Pansu et al., 2010, 2014] mostrando buenos resultados en las diferentes evaluaciones, este mismo modelo ha sido evaluado, encontrando una propuesta de evolución del mismos (Valery, 2018). Sin embargo, las investigaciones antes mencionadas, presenta la desventaja de haber sido desarrolladas en un software de simulación privativo llamado Vensim creado por Ventana Systems, Inc. para la construcción de modelos de sistemas dinámicos, limitado a funciones desarrolladas por dicha empresa, lo que no permite ampliar la investigación en otros aspectos de interés sin la necesidad de acudir a otros softwares externos.\\
+
+De igual meneara, el grupo de Investigación en Biotecnología Agrícola y Ambiental (GIBAA) de la UNET, ha desarrollados diversos planteamientos de modelos bajo este software, por lo que se propone el uso de la herramienta para el análisis estadístico y gráfica llamado R, el cual es un ambiente de programación formado por un conjunto de herramientas muy flexibles que pueden ampliarse fácilmente mediante paquetes, librerías o definiendo nuestras propias funciones. Además, es gratuito y de código abierto. Cualquier usuario puede descargar y crear su código de manera gratuita, sin restricciones de uso, la única regla es que la distribución siempre sea libre (GPL). Gracias a que puede accederse libremente a su código, R no tiene limitadas sus funciones, al contrario de lo que sucede con otras herramientas comerciales. \\
+
+El planteamiento general consiste en utilizar el modelo MOMOS planteado por Valery (2018) e implementarlo en R, permitiendo la comparación de los resultados obtenidos en Vensim (Valery, 2018) y por el paquete a desarrollar. Buscando como resultado la versatilidad a los investigadores interesados de poder trabajar sobre un ambiente que puedan manejar y modificar en las diferentes necesidades de trabajo.\\
+
+
+
+
+\section{Objetivos}
+
+\subsection{Objetivo General}
+Desarrollar un paquete en el lenguaje R que implemente el modelo MOMOS
+
+
+\subsection{Objetivos Espec\'ificos}
+
+\begin{itemize}
+\item Estudiar la Estructura del modelo MOMOS\\
+\item Crear la funciones primarias en el lenguaje R para implementar el modelo MOMOS\\
+\item Realizar las pruebas estándar y funcionales del paquete creado en el lenguaje R\\
+\end{itemize}
+
+\section{Justificaci\'on e Importancia}
+
+En las ciencias agronómicas y áreas afines, en la última década, se han utilizado una serie de herramientas que permiten mejorar los procesos de producción, así como del manejo de los recursos, entre las mismas, se encuentran los modelos dinámicos de simulación los cuales logran mostrar una representación lo más cercana a la realidad, generando una mejor entendimiento de los procesos en los ecosistemas y agroecosistemas. \\
+
+\section{Alcance y Limitaciones}
+
+El paquete a desarrollar en el lenguaje R permitirá ajustar y simular el modelo MOMOS, el resultado obtenido se comparara con los obtenidos por Valery (2018) en el cual uso el programa VENSIM para simular el mismo modelo. \\
