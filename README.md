@@ -1,5 +1,6 @@
 # Requirements
 - R Package in your O.S (Windows - Mac OS - GNU/Linux)
+- For only development: libgit2 (Mac OS) - libgit2-dev (GNU/Linux)
 # Requirements for development
 ```
 install.packages('devtools')
