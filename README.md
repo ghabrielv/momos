@@ -4,6 +4,9 @@
 # Requirements for development
 ```
 install.packages('devtools')
+install.packages(c('deSolve','ggplot2','gridExtra','readxl','gdata','FME'))
+install.packages(c('covr','DT'))
+install.packages(c("rmarkdown", "knitr"))
 ```
 # Load
 ```{r}
