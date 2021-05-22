@@ -1,3 +1,9 @@
+# Requirements
+- R Package in your O.S (Windows - Mac OS - GNU/Linux)
+# Requirements for development
+```
+install.packages('devtools')
+```
 # Load
 ```{r}
 devtools::load_all()
