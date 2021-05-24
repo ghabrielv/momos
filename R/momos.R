@@ -130,3 +130,45 @@ momos <- function (params = NULL) {
   return(as.data.frame(out))
 
 }
+
+momos_optimize <- function (variable = NULL) {
+  # Check if variable is null
+  if(is.null(variable)) {
+    message("Variable cannot be null")
+    return(NA)
+  }
+
+  # Check if variable is CM or RA
+  if(variable != "CM" && variable != "RA") {
+    message("Variable must be CM or RA")
+    return(NA)
+  }
+
+  # Get simulate data
+  simulate_data <- as.data.frame(list(time = out$time, CM = out$CM, RA = out$RA))
+
+  # Get real data
+  library("xlsx")
+  real_data <- read.xlsx("data/momos.xlsx", sheetIndex = 1)
+
+  data <- data.frame(Time = integer(), Real_Value = double(), Simulate_Value = double(), stringsAsFactors = FALSE)
+  str(data)
+
+  # Create data frame with all data
+  library("sjmisc")
+  for (var in times) {
+    real <- NA
+    simulate <- NA
+    if (!is_empty(real_data[real_data$time == var, ])) {
+      ifelse("CM" == variable, real <- real_data[real_data$time == var, ]$CM, real <- real_data[real_data$time == var, ]$RA)
+    }
+    if (!is_empty(simulate_data[simulate_data$time == var, ])) {
+      ifelse("CM" == variable, simulate <- simulate_data[simulate_data$time == var, ]$CM, simulate <- simulate_data[simulate_data$time == var, ]$RA)
+    }
+    new_record <- data.frame(var, real, simulate)
+    names(new_record) <- c("Time", "Real_Value", "Simulate_Value")
+    data <- rbind(data, new_record)
+  }
+
+  return(data)
+}

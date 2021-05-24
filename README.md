@@ -1,10 +1,15 @@
 # Requirements
 - R Package in your O.S (Windows - Mac OS - GNU/Linux)
+- Java 1.8.0 in your O.S (Windows - Mac OS - GNU/Linux)
 - For only development: libgit2 (Mac OS) - libgit2-dev (GNU/Linux)
+# Execute in your terminal
+```
+R CMD javareconf
+```
 # Requirements for development
 ```
 install.packages('devtools')
-install.packages(c('deSolve','ggplot2','gridExtra','readxl','gdata','FME'))
+install.packages(c('deSolve','ggplot2','gridExtra','rJava','xlsx','sjmisc','gdata','FME'))
 install.packages(c('covr','DT'))
 install.packages(c("rmarkdown", "knitr"))
 ```
