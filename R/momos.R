@@ -127,6 +127,8 @@ momos <- function (params = NULL) {
     method = "rk4"
   )
 
+  plot(out)
+
   return(as.data.frame(out))
 
 }
