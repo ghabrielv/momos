@@ -174,3 +174,8 @@ momos_optimize <- function (variable = NULL) {
 
   return(data)
 }
+
+# Graphs
+plot(real_data$time, real_data$RA, type = "o", main = 'MOMOS', col="dark blue", xlab="Time", ylab="RA")
+lines(out$time, out$RA, col = "dark red")
+legend(25, 500, legend=c("Experimental", "Simulation"), col=c("dark blue", "dark red"), lty=1:1, cex=0.8)
