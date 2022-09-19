@@ -19,13 +19,13 @@
 #' params$Kmb <- 0.001
 #' params$Kresp <- 0.1419
 #' params$Ci <- 50.04
-#' params$from <- 0
+#' params$from <- 1
 #' params$to <- 30
-#' params$by <- 1
+#' params$at <- 1
 #' out <- momos(params)
 #'
 #' @export
-momos <- function (params = NULL) {
+get_params = function(params = NULL) {
 
   # Check if params are a list
   if(is.list(params)) {
@@ -43,26 +43,33 @@ momos <- function (params = NULL) {
   }
 
   # Initial values
-  Necromasa <- ifelse("Necromasa" %in% names(params), params$Necromasa, 2140)
-  HLo <- ifelse("HLo" %in% names(params), params$HLo, 2250)
-  HSo <- ifelse("HSo" %in% names(params), params$HSo, 19150)
-  Co <- ifelse("Co" %in% names(params), params$Co, 55.40)
+  Necromasa <<- ifelse("Necromasa" %in% names(params), params$Necromasa, 2140)
+  HLo <<- ifelse("HLo" %in% names(params), params$HLo, 2250)
+  HSo <<- ifelse("HSo" %in% names(params), params$HSo, 19150)
+  Co <<- ifelse("Co" %in% names(params), params$Co, 55.40)
 
   # Parameters of the MOMOS model
-  Kvl <- ifelse("Kvl" %in% names(params), params$Kvl, 0.2070)
-  Kvs <- ifelse("Kvs" %in% names(params), params$Kvs, 0.00057)
-  fs <- ifelse("fs" %in% names(params), params$fs, 0.00002)
-  Khl <- ifelse("Khl" %in% names(params), params$Khl, 0.0638)
-  Khs <- ifelse("Khs" %in% names(params), params$Khs, 0.00077)
-  Khls <- ifelse("Khls" %in% names(params), params$Khls, 0.1581)
-  Kmb <- ifelse("Kmb" %in% names(params), params$Kmb, 0.001)
-  Kresp <- ifelse("Kresp" %in% names(params), params$Kresp, 0.1419)
-  Ci <- ifelse("Ci" %in% names(params), params$Ci, 50.04)
+  Kvl <<- ifelse("Kvl" %in% names(params), params$Kvl, 0.2070)
+  Kvs <<- ifelse("Kvs" %in% names(params), params$Kvs, 0.00057)
+  fs <<- ifelse("fs" %in% names(params), params$fs, 0.00002)
+  Khl <<- ifelse("Khl" %in% names(params), params$Khl, 0.0638)
+  Khs <<- ifelse("Khs" %in% names(params), params$Khs, 0.00077)
+  Khls <<- ifelse("Khls" %in% names(params), params$Khls, 0.1581)
+  Kmb <<- ifelse("Kmb" %in% names(params), params$Kmb, 0.001)
+  Kresp <<- ifelse("Kresp" %in% names(params), params$Kresp, 0.1419)
+  Ci <<- ifelse("Ci" %in% names(params), params$Ci, 50.04)
 
   # Execution time
-  from <- ifelse("from" %in% names(params), params$from, 0)
-  to <- ifelse("to" %in% names(params), params$to, 30)
-  by <- ifelse("by" %in% names(params), params$by, 1)
+  from <<- ifelse("from" %in% names(params), params$from, 1)
+  to <<- ifelse("to" %in% names(params), params$to, 30)
+  at <<- ifelse("at" %in% names(params), params$at, 1)
+
+}
+
+momos <- function (params = NULL) {
+
+  # Getting parameters
+  get_params(params)
 
   # Derivs
   derivs <- function(time, y, pars) {
@@ -115,7 +122,7 @@ momos <- function (params = NULL) {
   )
 
   # Execution time
-  times <- seq(from = from, to = to, by = by)
+  times <- seq(from = from, to = to, by = at)
 
   library(deSolve)
 
@@ -133,49 +140,79 @@ momos <- function (params = NULL) {
 
 }
 
-momos_optimize <- function (variable = NULL) {
-  # Check if variable is null
-  if(is.null(variable)) {
-    message("Variable cannot be null")
-    return(NA)
-  }
+# Calibrating model
+calibrate_momos <- function(params = NULL) {
+  # Getting parameters
+  get_params(params)
 
-  # Check if variable is CM or RA
-  if(variable != "CM" && variable != "RA") {
-    message("Variable must be CM or RA")
-    return(NA)
-  }
+  # load libraries
+  library(ggplot2) #library for plotting
+  library(reshape2) # library for reshaping data (tall-narrow <-> short-wide)
+  library(deSolve) # library for solving differential equations
+  library(minpack.lm) # library for least squares fit using levenberg-marquart algorithm
+  library(xlsx)
 
-  # Get simulate data
-  simulate_data <- as.data.frame(list(time = out$time, CM = out$CM, RA = out$RA))
+  # Getting experimental data
+  experimental_data <<- read.xlsx("data/momos.xlsx", sheetIndex = 1)
+  names(experimental_data)=c("time","CM","RA")
 
-  # Get real data
-  library("xlsx")
-  real_data <- read.xlsx("data/momos.xlsx", sheetIndex = 1)
 
-  data <- data.frame(Time = integer(), Real_Value = double(), Simulate_Value = double(), stringsAsFactors = FALSE)
-  str(data)
+  # plot data
+  tmp=melt(experimental_data,id.vars=c("time"),variable.name="variables",value.name="values")
+  ggplot(data=tmp,aes(x=time,y=values,color=variables))+geom_point(size=3)
 
-  # Create data frame with all data
-  library("sjmisc")
-  for (var in times) {
-    real <- NA
-    simulate <- NA
-    if (!is_empty(real_data[real_data$time == var, ])) {
-      ifelse("CM" == variable, real <- real_data[real_data$time == var, ]$CM, real <- real_data[real_data$time == var, ]$RA)
-    }
-    if (!is_empty(simulate_data[simulate_data$time == var, ])) {
-      ifelse("CM" == variable, simulate <- simulate_data[simulate_data$time == var, ]$CM, simulate <- simulate_data[simulate_data$time == var, ]$RA)
-    }
-    new_record <- data.frame(var, real, simulate)
-    names(new_record) <- c("Time", "Real_Value", "Simulate_Value")
-    data <- rbind(data, new_record)
-  }
+  # parameter fitting using levenberg marquart algorithm
+  # initial guess for parameters
+  parms=c(Kresp=Kresp)
+  # fitting
+  fitval=nls.lm(par=parms,fn=ssq)
+  summary(fitval)
 
-  return(data)
+  #### Graphs
+  # plot of predicted vs experimental data
+
+  # simulated predicted profile at estimated parameter values
+  t=seq(from,to,at)
+  parms=as.list(fitval$par)
+  out=momos(params = parms)
+  out=out[,c("time","CM","RA")]
+  outdf=data.frame(out)
+  names(outdf)=c("time","CM_pred","RA_pred")
+
+  # Overlay predicted profile with experimental data
+  tmppred=melt(outdf,id.var=c("time"),variable.name="variables",value.name="values")
+  tmpexp=melt(experimental_data,id.var=c("time"),variable.name="variables",value.name="values")
+  p=ggplot(data=tmppred,aes(x=time,y=values,color=variables,linetype=variables))+geom_line()
+  p=p+geom_line(data=tmpexp,aes(x=time,y=values,color=variables,linetype=variables))
+  p=p+geom_point(data=tmpexp,aes(x=time,y=values,color=variables))
+  p=p+scale_linetype_manual(values=c(0,1,0,1))
+  p=p+scale_color_manual(values=rep(c("red","blue"),each=2))+theme_bw()
+  print(p)
 }
 
-# Graphs
-plot(real_data$time, real_data$RA, type = "o", main = 'MOMOS', col="dark blue", xlab="Time", ylab="RA")
-lines(out$time, out$RA, col = "dark red")
-legend(23, 750, legend=c("Experimental", "Simulation"), col=c("dark blue", "dark red"), lty=1:1, cex=0.8)
+ssq=function(parms){
+  # Time points for which values is experimental
+  # Include the points where data is available
+  t=c(seq(from,to,at),experimental_data$time)
+  t=sort(unique(t))
+
+  # parameters from the parameter estimation routine
+  k1=parms[1]
+
+  # solve the equation
+  out_func=momos(list(Kresp=k1))
+  out_func=out_func[,c("time","CM","RA")]
+
+  # Filter data that contains time points where data is available
+  outdf=data.frame(out_func)
+  outdf=outdf[outdf$time %in% experimental_data$time,]
+
+  # Evaluate predicted vs experimental residual
+  preddf=melt(outdf,id.var="time",variable.name="variables",value.name="values")
+  expdf=melt(experimental_data,id.var="time",variable.name="variables",value.name="values")
+  ssqres=preddf$values-expdf$values
+
+  return(ssqres)
+}
+
+
