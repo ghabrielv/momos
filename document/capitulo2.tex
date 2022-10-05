@@ -16,7 +16,7 @@ La investigaci\'on fue importante en este trabajo de grado, ya que en ella crear
 
 \section{Bases Te\'oricas}
 
-\section{Modelos}
+\subsection{Modelos}
 
 En la actualidad el avance de la tecnolog\'ia, permite que para el estudio de sistemas biol\'ogicos,  los modelos de simulaci\'on sean una herramienta que ayuda en el manejo de la informaci\'on, as\'i como la evaluaci\'on y planificaci\'on de manejos y dise\~no de experimentos.\\
 
@@ -51,13 +51,26 @@ Las etapas de conceptualizaci\'on y formalizaci\'on se basan en toda la informac
 
 \subsection{Lenguaje R.}
 
-R es un conjunto  integrado de \textit{software} de c\'odigo abierto para el almacenamiento, manipulaci\'on, c\'alculo y visualizaci\'on de datos para computaci\'on y graficaci\'on estad\'istica, puede ser compilado y ejecutado en  en Windows, Mac OS X y otras  plataformas UNIX (como Linux), se distribuye usualmente en formato binario (\url{https://www.r-project.org/about.html}, 2018). El proyecto de \emph{software} R fue iniciado por Robert Gentleman y Ross Ihaka. El lenguaje fue influenciado por  lenguaje S desarrollado originalmente en Bell Laboratories por John Chambers y sus colegas. Desde entonces ha evolucionado  para el c\'alculo estad\'istico asociado a diversas disciplinas para contextos acad\'emicos y comerciales. En R, la unidad fundamental de c\'odigo compartible es el paquete, el cual agrupa c\'odigo, datos, documentaci\'on y pruebas, y resulta simple de compartir con otros. Para enero del 2015 ya hab\'ian m\'as de 6.000 paquetes disponibles en la Red Integral de Archivos de R, conocido com\'unmente por su acr\'onimo CRAN, el cual es el repositorio de paquetes. Esta gran variedad de paquetes es una de las razones por las cuales R es tan \'exitoso, pues es probable que alg\'un investigador o acad\'emico, ya haya resuelto un problema en su propio campo usando esta herramienta, por lo que otros usuarios simplemente podr\'an recurrir a ella para su uso directo o para llamarla en un nuevo c\'odigo (Wickham,2015). \\
+R es un conjunto  integrado de \textit{software} de c\'odigo abierto para el almacenamiento, manipulaci\'on, c\'alculo y visualizaci\'on de datos para computaci\'on y graficaci\'on estad\'istica, puede ser compilado y ejecutado en  en Windows, Mac OS X y otras  plataformas UNIX (como Linux), se distribuye usualmente en formato binario (\url{https://www.r-project.org/about.html}, 2018). El proyecto de \emph{software} R fue iniciado por Robert Gentleman y Ross Ihaka. El lenguaje fue influenciado por  lenguaje S desarrollado originalmente en Bell Laboratories por John Chambers y sus colegas. Desde entonces ha evolucionado  para el c\'alculo estad\'istico asociado a diversas disciplinas para contextos acad\'emicos y comerciales. \\
+
+En R, la unidad fundamental de c\'odigo compartible es el paquete, el cual agrupa c\'odigo, datos, documentaci\'on y pruebas, y resulta simple de compartir con otros. Para enero del 2015 ya hab\'ian m\'as de 6.000 paquetes disponibles en la Red Integral de Archivos de R, conocido com\'unmente por su acr\'onimo CRAN, el cual es el repositorio de paquetes. Esta gran variedad de paquetes es una de las razones por las cuales R es tan \'exitoso, pues es probable que alg\'un investigador o acad\'emico, ya haya resuelto un problema en su propio campo usando esta herramienta, por lo que otros usuarios simplemente podr\'an recurrir a ella para su uso directo o para llamarla en un nuevo c\'odigo (Wickham,2015). el desarrollo del algoritmo del modelo MOMOS se realiza empleando R y la herramienta Rstudio. \\
 
 
 \subsection{RStudio.}
 
-RStudio es un ambiente de desarrollo integrado (\textit{Integrated Development Environment}, IDE) que ofrece herramientas de desarrollo vía consola, editor de sintaxis que apoya la ejecución de código, así como herramientas para el trazado, la depuración y la gestión del espacio de trabajo.  RStudio está disponible para Windows, Mac y Linux o para navegadores conectados a RStudio Server o RStudio Server Pro (Debian / Ubuntu, RedHat / CentOS, y SUSE Linux) (\url{https://www.rstudio.com/about/}, 2018).
+RStudio es un ambiente de desarrollo integrado (\textit{Integrated Development Environment}, IDE) que ofrece herramientas de desarrollo vía consola, editor de sintaxis que apoya la ejecución de código, así como herramientas para el trazado, la depuración y la gestión del espacio de trabajo.  RStudio está disponible para Windows, Mac y Linux o para navegadores conectados a RStudio Server o RStudio Server Pro (Debian / Ubuntu, RedHat / CentOS, y SUSE Linux) (\url{https://www.rstudio.com/about/}, 2018). Tambi\'en es necesario conocer con precisi\'on que tipo de lenguaje es y una buena forma de realizar el algoritmo que simula el modelo MOMOS.\\
  
+ \subsection{Algoritmos en R/RStudio.}
+ 
+El lenguaje R es un lenguaje interpretativo y no compilado, esto se traduce a que los comandos escritos por teclado son ejecutados directamente sin necesidad de construir un ejecutable, lo cual representa una facilidad al momento de analizar datos complejos. \\
+
+Como lenguaje de programación, R adopta una sintaxis y una gramática que difiere de muchos otros lenguajes: los objetos en R son vectores, y las funciones son vectorizádas para operar con todos los elementos del objeto. Los objetos en R tienen una semántica de copia sobre el cambio y de paso por valor, reduciendo las consecuencias inesperadas para los usuarios en detrimento del uso menos eficiente de la memoria. Es importante puntualizar que los paradigmas comunes en otros lenguajes, como el bucle ’for’, no son tan comunes en R. Los programas escritos en R reflejan de una manera más clara los algoritmos estadísticos que implementan. Además, cuenta con la ventaja de que es fácil de depurar código en R por ser un lenguaje interpretado. (Becerro, 2014).\\
+
+Para poder comparar el modelo MOMOS experimental versus el modelo simulado, es necesario leer los datos experimentales, como método de obtención será empleado la lectura de datos desde un archivo de formato ".xls". Los datos leidos son aquellos datos experimentales del modelo que fueron capturados en un momento determinado y que escapa del contexto de este estudio.\\
+
+\textbf{ xlsx:} es un paquete para R que da control programático de archivos excel. Este paquete emplea una API de alto nivel que permite al usuario leer de una hoja de un archivo .xlsx a un data.frame y escribir un data.frame a un archivo. Funcionalidad de menor nivel permite la manipulación directa de hojas, filas y celdas. Para poder visualizar el contenido de agua relativo por capa de suelo de manera gráfica (resultante de la simulación), es necesario emplear las herramientas provistas por el paquete de R descrito a continuación.\\
+
+\textbf{ggplot2:} es un paquete para R que permite crear elegantes visualizaciones de datos usando gramática de descripción de gráficos, es un sistema para declarativamente crear gráficos. Una vez la data ha sido provista, mediante funciones se le indica a este paquete como graficarlas.\\
 
 \subsection{Estructura de paquetes en R/RStudio.}
 
@@ -128,12 +141,30 @@ Documentaci\'on de clases, gen\'ericos y m\'etodos:
   \item\textbf{ NAMESPACE:} Espec\'ifica que objetos conforman el paquete. Se utiliza para  proporcionar espacios a los nombres como su nombre lo indica, es utilizado para interactuar con los paquetes y sus variables del CRAN de R.\\
 \end{enumerate}
 
+\subsection{Pruebas estándar y pruebas funcionales}
+
+Para poder evaluar si el algoritmo y su componentes satisfacen o no los requerimientos para el modelos MOMOS, es necesario realizar un proceso de pruebas. Una prueba es definída según Tutorialspoint (Software testing, sf.) como \textit{"A process of analyzing a software item to detect the differences between existing and required conditions (that is defects/errors/bugs) and to evaluate the features of the software item"}.\\
+
+En el contexto de este estudio se consideraran las pruebas estándar como el conjunto de pruebas de nivel que comprenden las pruebas unitarias, las pruebas de sistema y las pruebas de aceptación.\\
+
+\begin{itemize}
+	\item \textbf{Pruebas Unitarias:} ”Unit testing is performed by the respective developers on the individual units of source code assigned areas. The goal of unit testing is to isolate each part of the pro- gram and show that individual parts are correct in terms of requirements and functionality". La data para efectuar estas pruebas suele ser diferente de la que es empleada en las pruebas de aceptación.
+	\item \textbf{Pruebas de Sistemas}: "System testing tests the system as a whole. Once all the components are integrated, the application as a whole is tested rigorously to see that it meets the specified Quality Standards",(Tutorialspoint, Software testing, sf). Las pruebas de sistema permiten probar verificar y validar los requerimientos del sistema en conjunto con la arquitectura la aplicación.
+	\item \textbf{Pruebas de Aceptación}: ”Acceptance tests are (...) to point out simple spelling mistakes, cosmetic errors, or interface gaps, (and) to point out any bugs in the application that will result in system crashes or major errors in the application", (Tutorialspoint, Software testing, sf). Estas pruebas son para probar como la aplicación se comporta en producción.
+\end{itemize}
+
+Existe un tipo de prueba especial que és la que se va aplicar al final del desarrollo del algoritmo, estas son las pruebas funcionales. Tutorialspoint(Software testing, sf.) define las pruebas funcionales como:
+
+\textit{"This is a type of (...) testing that is based on the specifications of the software that is to be tested. The application is tested by providing input and then the results are examined that need to conform to the functionality it was intended for. Functional testing of a software is conducted on a complete, integrated system to evaluate the system’s compliance with its specified requirements".}
 
 \subsection{Glosario}
 
-\paragraph{Crecimiento}: Aumento en un atributo medido, $x$, de un \'organo u organismo, como una funci\'on del tiempo, $t;x = f (t)$.
-\paragraph{Lenguaje R}: R es un entorno y lenguaje de programaci\'on con un enfoque al an\'alisis estad\'istico.
-\paragraph{R Studio }: R Studio es un entorno de desarrollo integrado, en ingl\'es ``integrated development environment" (IDE) para R.
+\paragraph{Código fuente:} Conjunto de instrucciones que componen un programa, escrito en cualquier lenguaje. En inglés "source code".
+\paragraph{Crecimiento:} Aumento en un atributo medido, $x$, de un \'organo u organismo, como una funci\'on del tiempo, $t;x = f (t)$.
+\paragraph{Data:} El nombre genérico para cualquier cosa que entre, salga o se guarde en una computadora o cualquier otro medio, siempre y cuando sea todo en formato digital.
+\paragraph{Modelo:} «Un modelo (M) para un sistema (S) y un experimento (E) es cualquier objeto al que puede aplicarse E para responder preguntas acerca de S» Marvin Minski (1965). Paul Humphrey define simulación como “Simulación es cualquier método implementado en computadora destinado a explorar las propiedades de modelos matemáticos, cuando no se dispone de métodos analíticos” (Grüne-Yanoff y Weirich 2010).
+\paragraph{Lenguaje R:} R es un entorno y lenguaje de programaci\'on con un enfoque al an\'alisis estad\'istico.
+\paragraph{R Studio:} R Studio es un entorno de desarrollo integrado, en ingl\'es ``integrated development environment" (IDE) para R.
 
 
 \section{\textit{GNU General Public License v2.0 (GPL-2.0) }}
