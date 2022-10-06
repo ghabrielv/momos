@@ -11,9 +11,9 @@ Por lo que la comprensión de los diferentes procesos y transformaciones que ocu
 
 Existen una gran cantidad de modelos que estudian la MOS, muchos de los cuales están desarrollados sobre plataformas propias, lo cual nos permite el proceso de enseñanza-aprendizaje, así como, de investigación en el desarrollo de mejoras al mismo por otros investigadores, de igual manera existen herramientas donde se han desarrollado de manera práctica modelos, tales como por ejemplo el modelo MOMOS (Materia Organica y MicroOrganismos del Suelo), el cual ha sido calibrado y validado con datos e información de un estudio en un gradiente altitudinal tropical [Pansu et al., 2010, 2014] mostrando buenos resultados en las diferentes evaluaciones, este mismo modelo ha sido evaluado, encontrando una propuesta de evolución del mismos (Valery, 2018). Sin embargo, las investigaciones antes mencionadas, presenta la desventaja de haber sido desarrolladas en un software de simulación privativo llamado Vensim creado por Ventana Systems, Inc. para la construcción de modelos de sistemas dinámicos, limitado a funciones desarrolladas por dicha empresa, lo que no permite ampliar la investigación en otros aspectos de interés sin la necesidad de acudir a otros softwares externos.\\
 
-De igual manera, el grupo de Investigación en Biotecnología Agrícola y Ambiental (GIBAA) de la UNET, ha desarrollado diversos planteamientos de modelos bajo un software libre, por lo que se propone el uso de la herramienta para el análisis estadístico y gráfica llamado R, el cual es un ambiente de programación formado por un conjunto de herramientas muy flexibles que pueden ampliarse fácilmente mediante paquetes, librerías o definiendo nuestras propias funciones. Además, es gratuito y de código abierto. Cualquier usuario puede descargar y crear su código de manera gratuita, sin restricciones de uso, la única regla es que la distribución siempre sea libre (GPL). Gracias a que puede accederse libremente a su código, R no tiene limitadas sus funciones, al contrario de lo que sucede con otras herramientas comerciales. \\
+De igual manera, el grupo de Investigación en Biotecnología Agrícola y Ambiental (GIBAA) de la UNET, ha desarrollado diversos planteamientos de modelos bajo un software libre, por lo que se hace uso de la herramienta para el análisis estadístico y gráfico llamado R, el cual es un ambiente de programación formado por un conjunto de herramientas muy flexibles que pueden ampliarse fácilmente mediante paquetes, librerías o definiendo funciones propias. Además, es gratuito y de código abierto. Cualquier usuario puede descargar y crear su código de manera personal, sin restricciones de uso, la única regla es que la distribución siempre sea libre (GPL). Gracias a que puede accederse libremente a su código, R no tiene limitadas sus funciones, al contrario de lo que sucede con otras herramientas comerciales. \\
 
-La finalidad de esta investigación consiste en utilizar el modelo MOMOS desarrollado por Valery (2018) en Vensim e implementarlo en R, permitiendo la comparación de los resultados obtenidos en Vensim (Valery, 2018) contra el resultado del paquete a desarrollar. Buscando como meta la versatilidad a los investigadores interesados de poder trabajar sobre un ambiente que puedan manejar y modificar en las diferentes necesidades de trabajo.\\
+La finalidad de esta investigación consiste en utilizar el modelo MOMOS desarrollado por Valery (2018) en Vensim para migrarlo hacia R, permitiendo la comparación de los resultados obtenidos en Vensim (Valery, 2018) contra el resultado obtenido del paquete en R. Buscando como meta la versatilidad a los investigadores interesados de poder trabajar sobre un ambiente que puedan manejar y modificar con las diferentes necesidades de su trabajo.\\
 
 
 
@@ -21,15 +21,15 @@ La finalidad de esta investigación consiste en utilizar el modelo MOMOS desarro
 \section{Objetivos}
 
 \subsection{Objetivo General}
-Desarrollar un paquete en el lenguaje R que implemente el modelo MOMOS.
+Desarrollar un paquete en el lenguaje R implementando el modelo MOMOS.
 
 
 \subsection{Objetivos Espec\'ificos}
 
 \begin{itemize}
-\item Estudiar la Estructura del modelo MOMOS.\\
-\item Crear las funciones primarias en el lenguaje R para implementar el modelo MOMOS.\\
-\item Realizar las pruebas unitarias y funcionales del paquete creado en el lenguaje R.\\
+\item Estudiar la Estructura del modelo MOMOS.
+\item Crear las funciones primarias en el lenguaje R de la implementación del modelo MOMOS.
+\item Realizar las pruebas unitarias y funcionales del paquete creado en el lenguaje R.
 \end{itemize}
 
 \section{Justificaci\'on e Importancia}
@@ -38,4 +38,4 @@ En las ciencias agronómicas y áreas afines, en la última década, se han util
 
 \section{Alcance y Limitaciones}
 
-El paquete a desarrollar en el lenguaje R permitirá simular el modelo MOMOS, el resultado obtenido se comparará con los obtenidos por Valery (2018) en el programa VENSIM para simular el mismo modelo. \\
+El paquete se desarrolla en el lenguaje R y permite simular el modelo MOMOS, el resultado obtenido se compará con los obtenidos por Valery (2018) en el programa VENSIM para simular el mismo modelo. \\
