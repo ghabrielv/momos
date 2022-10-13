@@ -154,13 +154,6 @@ calibrate_momos <- function(params = NULL) {
     return(NA)
   }
 
-  # load libraries
-  # library(ggplot2) #library for plotting
-  # library(reshape2) # library for reshaping data (tall-narrow <-> short-wide)
-  # library(deSolve) # library for solving differential equations
-  # library(minpack.lm) # library for least squares fit using levenberg-marquart algorithm
-  # library(xlsx)
-
   # Getting experimental data
   experimental_data <<- read.xlsx(paste(getwd(),"data/momos.xlsx", sep="/"), sheetIndex = 1)
   names(experimental_data)=c("time","CM_experimental","RA_experimental")
@@ -170,10 +163,8 @@ calibrate_momos <- function(params = NULL) {
   parms=c(Kresp=Kresp)
   # fitting
   fitval=nls.lm(par=parms,fn=ssq)
+  print("============ DATOS DE CALIBRACION =============")
   print(summary(fitval))
-
-  #### Graphs
-  # plot of predicted vs experimental data
 
   # simulated predicted profile at estimated parameter values
   t=seq(from,to,at)
@@ -182,6 +173,9 @@ calibrate_momos <- function(params = NULL) {
   out=out[,c("time","CM","RA")]
   outdf=data.frame(out)
   names(outdf)=c("time","CM_calibrated","RA_calibrated")
+
+  print("============ DATOS DE MOMOS CALIBRADO =============")
+  print(outdf)
 
   return(outdf)
 }
@@ -215,18 +209,36 @@ graph_momos <- function(){
   exp_data=experimental_data
   names(exp_data)=c("time","CM_experimental","RA_experimental")
 
-  # plot data
-  tmp=melt(experimental_data,id.vars=c("time"),variable.name="variables",value.name="values")
-  ggplot(data=tmp,aes(x=time,y=values,color=variables))+geom_point(size=3)
+  simulated_data=out_simulated
+  names(simulated_data)=c("time","CM_simulated","RA_simulated")
 
-  # Overlay predicted profile with experimental data
-  tmppred=melt(outdf,id.var=c("time"),variable.name="variables",value.name="values")
-  tmpexp=melt(experimental_data,id.var=c("time"),variable.name="variables",value.name="values")
-  p=ggplot(data=tmppred,aes(x=time,y=values,color=variables,linetype=variables))+geom_line()
-  p=p+geom_line(data=tmpexp,aes(x=time,y=values,color=variables,linetype=variables))
-  p=p+geom_point(data=tmpexp,aes(x=time,y=values,color=variables))
-  p=p+scale_linetype_manual(values=c(0,1,0,1))
-  p=p+scale_color_manual(values=rep(c("red","blue"),each=2))+theme_bw()
+  # Overlay calibrated profile with experimental data and simulated data
+  tmp_calibrated=melt(out_calibrated,id.var=c("time"),variable.name="variables",value.name="values")
+  tmp_experimental=melt(exp_data,id.var=c("time"),variable.name="variables",value.name="values")
+  tmp_simulated=melt(simulated_data,id.var=c("time"),variable.name="variables",value.name="values")
+
+  p=ggplot(data=tmp_calibrated,aes(x=time,y=values,color=variables,linetype=variables))+geom_line()
+  #p=p+geom_line(data=tmp_experimental,aes(x=time,y=values,color=variables,linetype=variables)) # make lineal to experimental data
+  p=p+geom_point(data=tmp_experimental,aes(x=time,y=values,color=variables))
+  p=p+geom_line(data=tmp_simulated,aes(x=time,y=values,color=variables,linetype=variables))
   print(p)
 }
 
+momos <- function(){
+  # load libraries
+  library(ggplot2) #library for plotting
+  library(reshape2) # library for reshaping data (tall-narrow <-> short-wide)
+  library(deSolve) # library for solving differential equations
+  library(minpack.lm) # library for least squares fit using levenberg-marquart algorithm
+  library(xlsx) # library for read files with xlsx format
+
+  # call functions
+  out_simulated <- calculate_momos()
+  print("=========== DATOS DE MOMOS SIMULADO ===========")
+  print(out_simulated)
+  print("============ CALIBRANDO EL MODELO =============")
+  out_calibrated <- calibrate_momos()
+  print("============ GRAFICANDO EL MODELO =============")
+  graph_momos()
+
+}
