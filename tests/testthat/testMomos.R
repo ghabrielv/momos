@@ -18,3 +18,7 @@ test_that("Momos with non-numerical parameters", {
   params <- c(0, 30)
   expect_type(momos(params), "logical")
 })
+
+test_that("Momos with calibrate", {
+  expect_type(calibrate_momos(), "list")
+})

@@ -22,7 +22,7 @@
 #' params$from <- 1
 #' params$to <- 30
 #' params$at <- 1
-#' out <- momos(params)
+#' out <- calculate_momos(params)
 #'
 #' @export
 get_params = function(params = NULL) {
@@ -66,12 +66,17 @@ get_params = function(params = NULL) {
 
 }
 
-momos <- function (params = NULL) {
+calculate_momos <- function (params = NULL) {
 
   # Getting parameters
   get_params(params)
 
-  # Derivs
+  # Checking parameters
+  if(is.na(get_params(params))) {
+    return(NA)
+  }
+
+  # Derivative
   derivs <- function(time, y, pars) {
     with (as.list(c(pars, y)), {
       Fvl <- VL * Kvl
@@ -111,7 +116,7 @@ momos <- function (params = NULL) {
   HSo <- HSo
   Necromasa <- Necromasa
 
-  # Integral
+  # Create function y
   y <- c(
     VL = Necromasa * (1 - fs),
     VS = Necromasa * fs,
@@ -124,8 +129,7 @@ momos <- function (params = NULL) {
   # Execution time
   times <- seq(from = from, to = to, by = at)
 
-  library(deSolve)
-
+  # Differential Equations
   out <- ode(
     func = derivs,
     y = y,
@@ -134,39 +138,39 @@ momos <- function (params = NULL) {
     method = "rk4"
   )
 
-  plot(out)
+  out=out[,c("time","CM","RA")]
 
   return(as.data.frame(out))
 
 }
 
-# Calibrating model
+# Fitting parameters
 calibrate_momos <- function(params = NULL) {
   # Getting parameters
   get_params(params)
 
+  # Checking parameters
+  if(is.na(get_params(params))) {
+    return(NA)
+  }
+
   # load libraries
-  library(ggplot2) #library for plotting
-  library(reshape2) # library for reshaping data (tall-narrow <-> short-wide)
-  library(deSolve) # library for solving differential equations
-  library(minpack.lm) # library for least squares fit using levenberg-marquart algorithm
-  library(xlsx)
+  # library(ggplot2) #library for plotting
+  # library(reshape2) # library for reshaping data (tall-narrow <-> short-wide)
+  # library(deSolve) # library for solving differential equations
+  # library(minpack.lm) # library for least squares fit using levenberg-marquart algorithm
+  # library(xlsx)
 
   # Getting experimental data
-  experimental_data <<- read.xlsx("data/momos.xlsx", sheetIndex = 1)
-  names(experimental_data)=c("time","CM","RA")
-
-
-  # plot data
-  tmp=melt(experimental_data,id.vars=c("time"),variable.name="variables",value.name="values")
-  ggplot(data=tmp,aes(x=time,y=values,color=variables))+geom_point(size=3)
+  experimental_data <<- read.xlsx(paste(getwd(),"data/momos.xlsx", sep="/"), sheetIndex = 1)
+  names(experimental_data)=c("time","CM_experimental","RA_experimental")
 
   # parameter fitting using levenberg marquart algorithm
   # initial guess for parameters
   parms=c(Kresp=Kresp)
   # fitting
   fitval=nls.lm(par=parms,fn=ssq)
-  summary(fitval)
+  print(summary(fitval))
 
   #### Graphs
   # plot of predicted vs experimental data
@@ -174,20 +178,12 @@ calibrate_momos <- function(params = NULL) {
   # simulated predicted profile at estimated parameter values
   t=seq(from,to,at)
   parms=as.list(fitval$par)
-  out=momos(params = parms)
+  out=calculate_momos(params = parms)
   out=out[,c("time","CM","RA")]
   outdf=data.frame(out)
-  names(outdf)=c("time","CM_pred","RA_pred")
+  names(outdf)=c("time","CM_calibrated","RA_calibrated")
 
-  # Overlay predicted profile with experimental data
-  tmppred=melt(outdf,id.var=c("time"),variable.name="variables",value.name="values")
-  tmpexp=melt(experimental_data,id.var=c("time"),variable.name="variables",value.name="values")
-  p=ggplot(data=tmppred,aes(x=time,y=values,color=variables,linetype=variables))+geom_line()
-  p=p+geom_line(data=tmpexp,aes(x=time,y=values,color=variables,linetype=variables))
-  p=p+geom_point(data=tmpexp,aes(x=time,y=values,color=variables))
-  p=p+scale_linetype_manual(values=c(0,1,0,1))
-  p=p+scale_color_manual(values=rep(c("red","blue"),each=2))+theme_bw()
-  print(p)
+  return(outdf)
 }
 
 ssq=function(parms){
@@ -200,7 +196,7 @@ ssq=function(parms){
   k1=parms[1]
 
   # solve the equation
-  out_func=momos(list(Kresp=k1))
+  out_func=calculate_momos(list(Kresp=k1))
   out_func=out_func[,c("time","CM","RA")]
 
   # Filter data that contains time points where data is available
@@ -215,4 +211,22 @@ ssq=function(parms){
   return(ssqres)
 }
 
+graph_momos <- function(){
+  exp_data=experimental_data
+  names(exp_data)=c("time","CM_experimental","RA_experimental")
+
+  # plot data
+  tmp=melt(experimental_data,id.vars=c("time"),variable.name="variables",value.name="values")
+  ggplot(data=tmp,aes(x=time,y=values,color=variables))+geom_point(size=3)
+
+  # Overlay predicted profile with experimental data
+  tmppred=melt(outdf,id.var=c("time"),variable.name="variables",value.name="values")
+  tmpexp=melt(experimental_data,id.var=c("time"),variable.name="variables",value.name="values")
+  p=ggplot(data=tmppred,aes(x=time,y=values,color=variables,linetype=variables))+geom_line()
+  p=p+geom_line(data=tmpexp,aes(x=time,y=values,color=variables,linetype=variables))
+  p=p+geom_point(data=tmpexp,aes(x=time,y=values,color=variables))
+  p=p+scale_linetype_manual(values=c(0,1,0,1))
+  p=p+scale_color_manual(values=rep(c("red","blue"),each=2))+theme_bw()
+  print(p)
+}
 
