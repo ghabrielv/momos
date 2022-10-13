@@ -15,27 +15,59 @@
 \contentsline {subsection}{\numberline {2.2.4}Algoritmos en R/RStudio.}{11}{subsection.2.2.4}%
 \contentsline {subsection}{\numberline {2.2.5}Estructura de paquetes en R/RStudio.}{12}{subsection.2.2.5}%
 \contentsline {subsection}{\numberline {2.2.6}Pruebas estándar y pruebas funcionales}{14}{subsection.2.2.6}%
-\contentsline {subsection}{\numberline {2.2.7}Glosario}{15}{subsection.2.2.7}%
-\contentsline {paragraph}{Código fuente:}{15}{section*.2}%
+\contentsline {subsection}{\numberline {2.2.7}Glosario}{16}{subsection.2.2.7}%
+\contentsline {paragraph}{Código fuente:}{16}{section*.2}%
 \contentsline {paragraph}{Crecimiento:}{16}{section*.3}%
 \contentsline {paragraph}{Data:}{16}{section*.4}%
 \contentsline {paragraph}{Modelo:}{16}{section*.5}%
 \contentsline {paragraph}{Lenguaje R:}{16}{section*.6}%
 \contentsline {paragraph}{R Studio:}{16}{section*.7}%
-\contentsline {section}{\numberline {2.3}\textit {GNU General Public License v2.0 (GPL-2.0) }}{16}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Fundamentos Metodol\'ogicos}{17}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Enfoque de la investigaci\'on}{17}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Tipo o nivel de investigaci\'on}{17}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Dise\~no de la investigaci\'on}{18}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Metodolog\'ia}{19}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Aspectos administrativos}{20}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Desarrollo}{21}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Creación del esqueleto del paquete}{21}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Registrar el m\'etodo para el env\'io y uso de funciones}{21}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Dise\~no y codificaci\'on de las funciones}{22}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Pruebas unitarias de las funciones}{22}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Chequear la carga del paquete}{22}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Construcci\'on del m\'etodo de distribuci\'on del paquete}{22}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Conclusiones y Recomendaciones}{24}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusiones}{24}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Recomendaciones}{24}{section.5.2}%
+\contentsline {paragraph}{Necromasa:}{16}{section*.8}%
+\contentsline {paragraph}{HL:}{16}{section*.9}%
+\contentsline {paragraph}{HLo:}{16}{section*.10}%
+\contentsline {paragraph}{HS:}{16}{section*.11}%
+\contentsline {paragraph}{HSo:}{16}{section*.12}%
+\contentsline {paragraph}{Co:}{16}{section*.13}%
+\contentsline {paragraph}{Kvl:}{16}{section*.14}%
+\contentsline {paragraph}{Kvs:}{17}{section*.15}%
+\contentsline {paragraph}{fs:}{17}{section*.16}%
+\contentsline {paragraph}{Khl:}{17}{section*.17}%
+\contentsline {paragraph}{Khs:}{17}{section*.18}%
+\contentsline {paragraph}{Khls:}{17}{section*.19}%
+\contentsline {paragraph}{Kmb:}{17}{section*.20}%
+\contentsline {paragraph}{Kresp:}{17}{section*.21}%
+\contentsline {paragraph}{Ci:}{17}{section*.22}%
+\contentsline {paragraph}{VL:}{17}{section*.23}%
+\contentsline {paragraph}{VS:}{17}{section*.24}%
+\contentsline {paragraph}{CM:}{17}{section*.25}%
+\contentsline {paragraph}{RA:}{17}{section*.26}%
+\contentsline {paragraph}{Fvl:}{17}{section*.27}%
+\contentsline {paragraph}{Fvs:}{17}{section*.28}%
+\contentsline {paragraph}{Fmor:}{17}{section*.29}%
+\contentsline {paragraph}{Resp:}{17}{section*.30}%
+\contentsline {paragraph}{Fhl:}{17}{section*.31}%
+\contentsline {paragraph}{Fhls:}{17}{section*.32}%
+\contentsline {paragraph}{Fhs:}{18}{section*.33}%
+\contentsline {paragraph}{dVL:}{18}{section*.34}%
+\contentsline {paragraph}{dVS:}{18}{section*.35}%
+\contentsline {paragraph}{dCM:}{18}{section*.36}%
+\contentsline {paragraph}{dHL:}{18}{section*.37}%
+\contentsline {paragraph}{dHS:}{18}{section*.38}%
+\contentsline {paragraph}{dRA:}{18}{section*.39}%
+\contentsline {section}{\numberline {2.3}\textit {GNU General Public License v2.0 (GPL-2.0) }}{18}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Fundamentos Metodol\'ogicos}{19}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Enfoque de la investigaci\'on}{19}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Tipo o nivel de investigaci\'on}{19}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Dise\~no de la investigaci\'on}{20}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Metodolog\'ia}{21}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Aspectos administrativos}{22}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Desarrollo}{23}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Creación del esqueleto del paquete}{23}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Registrar el m\'etodo para el env\'io y uso de funciones}{27}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Dise\~no y codificaci\'on de las funciones}{29}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Pruebas unitarias de las funciones}{37}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Chequear la carga del paquete}{37}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Construcci\'on del m\'etodo de distribuci\'on del paquete}{37}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Conclusiones y Recomendaciones}{38}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusiones}{38}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Recomendaciones}{38}{section.5.2}%
