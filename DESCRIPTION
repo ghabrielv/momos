@@ -8,7 +8,7 @@ Description: It is a package that allows the simulation of the MOMOS model in th
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
-Depends: R (>= 3.0.0), deSolve, ggplot2, FME, minpack.lm, reshape2, xlsx
+Depends: R (>= 3.0.0), deSolve, ggplot2, FME, minpack.lm, reshape2, xlsx, httr
 Suggests: knitr, rmarkdown, testthat
 VignetteBuilder: knitr
 RoxygenNote: 7.1.1

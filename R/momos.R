@@ -155,8 +155,8 @@ calibrate_momos <- function(params = NULL) {
   }
 
   # Getting experimental data
-  # TODO: Fix file path
-  file <- paste("/Users/ghabriel/Projects/Thesis/momos","data/momos.xlsx", sep="/")
+  experimental_data_url <- "https://github.com/ghabrielv/momos/raw/master/data/momos.xlsx"
+  GET(experimental_data_url, write_disk(file <- tempfile(fileext = ".xlsx")))
   experimental_data <<- read.xlsx(file, sheetIndex = 1)
   names(experimental_data)=c("time","CM_experimental","RA_experimental")
 
