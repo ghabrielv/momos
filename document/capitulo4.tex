@@ -18,7 +18,9 @@ En esta primera etapa se crea la estructura del paquete, además, se cargan los 
     \item deSolve(Soetaert, K. \textit{et. al,} 2022; disponible en \url{https://cran.r-project.org/web/packages/deSolve/index.html})
     \item minpack.lm(Elzhov, T. \textit{et. al,} 2022; disponible en \url{https://cran.r-project.org/web/packages/minpack.lm/index.html})
     \item xlsx(Dragulescu A. \textit{et. al,} 2020; disponible en \url{https://cran.r-project.org/web/packages/xlsx/index.html})
-    \item TODO: Agregar FME ( >= 1.3.6.2), knitr ( >= 1.40), rmarkdown ( >= 2.17)
+    \item FME(Soetaert K. \textit{et. al,} 2021; disponible en \url{https://cran.r-project.org/web/packages/FME/index.html})
+    \item knitr(Xie Y. \textit{et. al,} 2022; disponible en \url{https://cran.r-project.org/web/packages/knitr/index.html})
+    \item rmarkdown(Allaire JJ. \textit{et. al,} 2022; disponible en \url{https://cran.r-project.org/web/packages/rmarkdown/index.html})
 \end{itemize}
 
 \noindent
@@ -289,19 +291,108 @@ Finalmente, el valor ideal es enviado como un nuevo par\'ametro a la funci\'on \
 
 El objetivo funcional de \textit{graph\textunderscore{momos()}} usando la librer\'ia de R \textit{ggplot2} es obtener una representaci\'on gr\'afica de los datos obtenidos durante el desarrollo de la investigaci\'on.\\
 
-TODO: Agregar codigo de graficacion.
+\begin{figure}[H]
+  \centering
+    \begin{minipage}{1\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{figure_4_19.png}
+      \caption{M\'etodo para graficar los resultados obtenidos}
+      \label{fig:Fig}
+    \end{minipage}%
+    \hspace{5mm}
+\end{figure}
 
-En ella se reflejan las curvas del modelo MOMOS para los diferentes tipos de datos: experimentales, simulados, calibrados.\\
+En ella se reflejan las curvas del modelo MOMOS para los diferentes tipos de datos: experimentales, simulados, y calibrados, cabe resaltar que los puntos en la gr\'afica son la representaci
+on de los datos reales que no son sucesivos.\\
 
-TODO: Agregar grafica de las curvas del modelo MOMOS
+\begin{figure}[H]
+  \centering
+    \begin{minipage}{1\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{figure_4_20.png}
+      \caption{Gr\'afica de los resultados obtenidos}
+      \label{fig:Fig}
+    \end{minipage}%
+    \hspace{5mm}
+\end{figure}
 \section{Pruebas unitarias de las funciones}
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+El proceso de desarrollo de pruebas unitarias consiste en validar las diferentes unidades de funciones desarrolladas, por lo cual, se escribieron usando la librer\'ia testthat (Wickham, 2017), estas pruebas est\'an contenidas en el archivo \textit{testMomos.R} del directorio \textit{tests/testthat/}, esto permite asegurar que cualquier modificaci\'on del c\'odigo que pueda afectar la salida de alguna funci\'on sea detectado en la ejecuci\'on de las pruebas. \\
+
+\begin{figure}[H]
+  \centering
+    \begin{minipage}{1\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{figure_4_21.png}
+      \caption{Resultado de las pruebas unitarias del paquete}
+      \label{fig:Fig}
+    \end{minipage}%
+    \hspace{5mm}
+\end{figure}
+
+Por otra parte, se valida que las pruebas unitarias creadas cubran la totalidad del c\'odigo escrito para el paquete, usando el m\'etodo \textit{test\textunderscore{coverage()}} del paquete \textit{devtools} (Wickham, 2017)
+
+\begin{figure}[H]
+  \centering
+    \begin{minipage}{1\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{figure_4_22.png}
+      \caption{Cobertura de las pruebas sobre el c\'odigo creado}
+      \label{fig:Fig}
+    \end{minipage}%
+    \hspace{5mm}
+\end{figure}
 
 \section{Chequear la carga del paquete}
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Para realizar el chequeo del paquete se utilizaron las pruebas unitarias proporcionadas por los paquetes RUnit (Zenka, 2015) y testthat (Wickham, 2017), tal como se observa en la Figura 4.22, Para verificar que el c\'odigo cumple con la estructura de un paquete en R se ejecuta un chequeo desde RStudio, que permite tambi\'en generar la documentaci\'on  y creaci\'on de las libreri\'as de enlace din\'amico (\textit{dynamic link library} DLL), obteniendo como resultado un chequeo sin errores y sin advertencias.\\
+
+\begin{figure}[H]
+  \centering
+    \begin{minipage}{1\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{figure_4_23.png}
+      \caption{Resultado del chequeo del paquete}
+      \label{fig:Fig}
+    \end{minipage}%
+    \hspace{5mm}
+\end{figure}
 
 \section{Construcci\'on del m\'etodo de distribuci\'on del paquete}
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Para la construcci\'on y distribuci\'on del paquete se usan los formatos tar.gz y tgz, que es utilizado por defecto por RStudio, para generar de forma comprimida el c\'odigo fuente y el binario del paquete respectivamente, tal como se observa en la Figura 4.24 y Figura 4.25.\\
+
+\begin{figure}[H]
+  \centering
+    \begin{minipage}{1\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{figure_4_24.png}
+      \caption{Resultado de la compilaci\'on del binario del paquete}
+      \label{fig:Fig}
+    \end{minipage}%
+    \hspace{5mm}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+    \begin{minipage}{1\textwidth}
+      \centering
+      \includegraphics[width=1\textwidth]{figure_4_25.png}
+      \caption{Resultado de la compilaci\'on del c\'odigo fuente del paquete}
+      \label{fig:Fig}
+    \end{minipage}%
+    \hspace{5mm}
+\end{figure}
+
+Finalmente, se utiliz\'o la herramienta \textit{GitHub}, para el control de versiones, asi como tambi\'en la distribuci\'on del paquete, disponible en \url{https://github.com/ghabrielv/momos} dicho repositorio contiene una carpeta llamada \textit{build} donde estan alojados los archivos generados Figura 4.26.\\
+
+\begin{figure}[H]
+  \centering
+    \begin{minipage}{0.6\textwidth}
+      \centering
+      \includegraphics[width=0.6\textwidth]{figure_4_26.png}
+      \caption{C\'odigo fuente y binario del paquete}
+      \label{fig:Fig}
+    \end{minipage}%
+    \hspace{5mm}
+\end{figure}
