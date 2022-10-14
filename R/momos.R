@@ -206,6 +206,7 @@ ssq=function(parms){
 }
 
 graph_momos <- function(){
+  # Prepare data for graphing
   exp_data=experimental_data
   names(exp_data)=c("time","CM_experimental","RA_experimental")
 
@@ -236,6 +237,8 @@ momos <- function(){
   out_simulated <- calculate_momos()
   print("=========== DATOS DE MOMOS SIMULADO ===========")
   print(out_simulated)
+  print("=========== DATOS DE MOMOS EXPERIMENTALES ===========")
+  print(experimental_data)
   print("============ CALIBRANDO EL MODELO =============")
   out_calibrated <- calibrate_momos()
   print("============ GRAFICANDO EL MODELO =============")
