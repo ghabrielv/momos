@@ -22,7 +22,7 @@
 #' params$from <- 1
 #' params$to <- 30
 #' params$at <- 1
-#' out <- calculate_momos(params)
+#' momos(params)
 #'
 #' @export
 get_params = function(params = NULL) {
@@ -155,7 +155,9 @@ calibrate_momos <- function(params = NULL) {
   }
 
   # Getting experimental data
-  experimental_data <<- read.xlsx(paste(getwd(),"data/momos.xlsx", sep="/"), sheetIndex = 1)
+  # TODO: Fix file path
+  file <- paste("/Users/ghabriel/Projects/Thesis/momos","data/momos.xlsx", sep="/")
+  experimental_data <<- read.xlsx(file, sheetIndex = 1)
   names(experimental_data)=c("time","CM_experimental","RA_experimental")
 
   # parameter fitting using levenberg marquart algorithm
@@ -225,22 +227,31 @@ graph_momos <- function(){
   print(p)
 }
 
-momos <- function(){
+momos <- function(params = NULL){
+
+  # Getting parameters
+  get_params(params)
+
+  # Checking parameters
+  if(is.na(get_params(params))) {
+    return(NA)
+  }
+
   # load libraries
-  library(ggplot2) #library for plotting
-  library(reshape2) # library for reshaping data (tall-narrow <-> short-wide)
-  library(deSolve) # library for solving differential equations
-  library(minpack.lm) # library for least squares fit using levenberg-marquart algorithm
-  library(xlsx) # library for read files with xlsx format
+  #require(ggplot2) #library for plotting
+  #require(reshape2) # library for reshaping data (tall-narrow <-> short-wide)
+  #require(deSolve) # library for solving differential equations
+  #require(minpack.lm) # library for least squares fit using levenberg-marquart algorithm
+  #require(xlsx) # library for read files with xlsx format
 
   # call functions
-  out_simulated <- calculate_momos()
+  out_simulated <<- calculate_momos(params)
   print("=========== DATOS DE MOMOS SIMULADO ===========")
   print(out_simulated)
+  print("============ CALIBRANDO EL MODELO =============")
+  out_calibrated <<- calibrate_momos(params)
   print("=========== DATOS DE MOMOS EXPERIMENTALES ===========")
   print(experimental_data)
-  print("============ CALIBRANDO EL MODELO =============")
-  out_calibrated <- calibrate_momos()
   print("============ GRAFICANDO EL MODELO =============")
   graph_momos()
 
