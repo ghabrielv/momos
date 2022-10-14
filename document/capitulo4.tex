@@ -2,11 +2,11 @@
 
 A continuaci\'on se describe de forma detallada, el dise\~no y desarrollo del paquete MOMOS (Materia Organica y MicroOrganismos del Suelo), siguiendo la metodolog\'ia descrita en el cap\'itulo 3.
 
-\section{Creación del esqueleto del paquete}
+\section{Creaci\'on del esqueleto del paquete}
 
 Para esta fase se utiliza el ambiente de desarrollo RStudio, el cual es un entorno de desarrollo integrado de fuente abierta para R que agrega muchas caracter\'isticas y herramientas de productividad, adem\'as de facilitar el uso de R, integrando la ayuda y la documentaci\'on.\\
 
-En esta primera etapa se crea la estructura del paquete, además, se cargan los paquetes necesarios del CRAN de R (Repositorios de R), de los cuales depende MOMOS; los mismos fueron almacenados en el repositorio local que se crea para este paquete durante el proceso de desarrollo, y para el manejo de versiones se utiliza Git y GitHub, los principales paquete empleados son:\\
+En esta primera etapa se crea la estructura del paquete, adem\'as, se cargan los paquetes necesarios del CRAN de R (Repositorios de R), de los cuales depende MOMOS; los mismos fueron almacenados en el repositorio local que se crea para este paquete durante el proceso de desarrollo, y para el manejo de versiones se utiliza Git y GitHub, los principales paquete empleados son:\\
 
 \begin{itemize}
     \item devtools(Wickham, H. \textit{et. al,} 2022; disponible en \url{https://cran.r-project.org/web/packages/devtools/index.html})
@@ -24,7 +24,7 @@ En esta primera etapa se crea la estructura del paquete, además, se cargan los 
 \end{itemize}
 
 \noindent
-\textbf{Los pasos para la creación del esqueleto del paquete son los siguientes:\\}
+\textbf{Los pasos para la creaci\'on del esqueleto del paquete son los siguientes:\\}
 
 \begin{itemize}
     \item Como se muestra en la Figura 4.1, dentro del entorno R Studio, en el men\'u principal, se selecciona la opci\'on \textit{''File''} y en el submen\'u desplegado se selecciona \textit{''New Project...''}
@@ -103,13 +103,13 @@ Se determina que la funci\'on principal reciba una lista de par\'ametros de entr
 
 TODO: Agregar lista de parametros por defecto (tabla)
 
-La primera función es \textit{calculate\textunderscore{momos()}} cuya salida muestra los valores de CM y RA simulados por cada instante de tiempo en un intervalo determinado, esta salida Figura 4.7 es un \textit{data frame} que corresponde a los datos simulados por el modelo din\'amico. Entendi\'endose como un data frame seg\'un Santana y Nieves (2014) “una clase de objetos especial en R. Normalmente, cuando se realiza un estudio estad \'istico sobre los sujetos u objetos de una muestra, la informaci\'on se organiza en un dataframe: una hoja de datos, en los que cada fila corresponde a un sujeto y cada columna a una variable. La estructura de un data frame es muy similar a la de una matriz. La diferencia es que una matriz s\'olo admite valores num\'ericos, mientras que en un data frame podemos incluir tambi\'en datos alfanum\'ericos."\\
+La primera funci\'on es \textit{calculate\textunderscore{momos()}} cuya salida muestra los valores de CM y RA simulados por cada instante de tiempo en un intervalo determinado, esta salida Figura 4.7 es un \textit{data frame} que corresponde a los datos simulados por el modelo din\'amico. Entendi\'endose como un data frame seg\'un Santana y Nieves (2014) “una clase de objetos especial en R. Normalmente, cuando se realiza un estudio estad \'istico sobre los sujetos u objetos de una muestra, la informaci\'on se organiza en un dataframe: una hoja de datos, en los que cada fila corresponde a un sujeto y cada columna a una variable. La estructura de un data frame es muy similar a la de una matriz. La diferencia es que una matriz s\'olo admite valores num\'ericos, mientras que en un data frame podemos incluir tambi\'en datos alfanum\'ericos."\\
 
 Por lo tanto, para esta funci\'on desarrollada, las columnas del data frame corresponden a las variables de estudio (CM / RA) (TODO: Agregar definicion de CM / RA) y las filas a los valores de las mismas en cada intervalo de tiempo.\\
 
-El modelo din\'amico genera una salida sin calibrar, esto puede producir que al comparar los datos reales con los datos simulados exista una gran diferencia entre los datos, por esta raz\'on, se decide diseñar una segunda función \textit{calibrate\textunderscore{momos()}} para realizar la calibración de los par\'ametros de entrada que afectan directamente las variables de salida (CM / RA), esto con el fin de buscar los valores ideales usando el algoritmo de levenberg marquart (TODO: Agregar informacion del algoritmo), con estos nuevos valores Figura 4.8 se busca asegurar un margen de error menor.\\
+El modelo din\'amico genera una salida sin calibrar, esto puede producir que al comparar los datos reales con los datos simulados exista una gran diferencia entre los datos, por esta raz\'on, se decide diseñar una segunda funci\'on \textit{calibrate\textunderscore{momos()}} para realizar la calibraci\'on de los par\'ametros de entrada que afectan directamente las variables de salida (CM / RA), esto con el fin de buscar los valores ideales usando el algoritmo de levenberg marquart (TODO: Agregar informacion del algoritmo), con estos nuevos valores Figura 4.8 se busca asegurar un margen de error menor.\\
 
-Adicionalmente, el resultado de esta funci\'on muestra tambi\'en los valores ideales de los par\'ametros que fueron usados para calibrar el modelo iterando nuevamente sobre la función \textit{calculate\textunderscore{momos()}}.\\
+Adicionalmente, el resultado de esta funci\'on muestra tambi\'en los valores ideales de los par\'ametros que fueron usados para calibrar el modelo iterando nuevamente sobre la funci\'on \textit{calculate\textunderscore{momos()}}.\\
 
 Para representar los valores obtenidos de las funciones anteriormente indicadas se define la funci\'on \textit{graph\textunderscore{momos()}} la cual tiene como finalidad comparar de manera grafica la curva del modelo con los valores simulados iniciales, los valores reales y tambi\'en los nuevos valores simulados despu\'es de la calibraci\'on.\\
 
@@ -183,10 +183,10 @@ Posteriormente, se calculan las N derivadas de las funciones de los compartimien
     \hspace{5mm}
 \end{figure}
 
-Una vez se obtienen las N derivadas necesarias, se procede a utilizar la librer\'ia \textit{deSolve} haciendo uso de la funci\'on \textit{ode()} que resuelve un sistema de ecuaciones diferenciales ordinarias, dicha función recibe los siguientes par\'ametros: \\
+Una vez se obtienen las N derivadas necesarias, se procede a utilizar la librer\'ia \textit{deSolve} haciendo uso de la funci\'on \textit{ode()} que resuelve un sistema de ecuaciones diferenciales ordinarias, dicha funci\'on recibe los siguientes par\'ametros: \\
 
 \begin{itemize}
-  \item \textit{func:} una función que calcula los valores de las derivadas en el sistema ODE (la definición del modelo) en el tiempo t.
+  \item \textit{func:} una funci\'on que calcula los valores de las derivadas en el sistema ODE (la definici\'on del modelo) en el tiempo t.
   \item \textit{y:} estado inicial del sistema ODE.
   \item \textit{params:} par\'ametros que son recibidos por la funci\'on.
   \item \textit{times:} secuencia de tiempo para la salida deseada, el primer valor es el inicial.
@@ -249,7 +249,7 @@ minimizada, y el primer argumento debe ser par, asi que procedemos a crear una f
     \hspace{5mm}
 \end{figure}
 
-Seguidamente, se establece el par\'ametro que se desea calibrar, en este caso usamos \textit{Kresp}, despues de que el vector de residuos es creado se procede a llamar la función de ajuste, la cual devuelve la información con el valor ideal para el par\'ametro indicado.
+Seguidamente, se establece el par\'ametro que se desea calibrar, en este caso usamos \textit{Kresp}, despues de que el vector de residuos es creado se procede a llamar la funci\'on de ajuste, la cual devuelve la informaci\'on con el valor ideal para el par\'ametro indicado.
 
 \begin{figure}[H]
   \centering

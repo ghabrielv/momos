@@ -8,9 +8,9 @@
 	
 \section{Tipo o nivel de investigaci\'on}
 	
-	Este proyecto plante\'o un tipo de investigaci\'on de desarrollo, en donde se integra la programaci\'on y evaluaci\'on del comportamiento de un paquete de simulación, que permite indagar los efectos de la interrelaci\'on entre los diferentes tipos de variable en lugar de los hechos.\\
+	Este proyecto plante\'o un tipo de investigaci\'on de desarrollo, en donde se integra la programaci\'on y evaluaci\'on del comportamiento de un paquete de simulaci\'on, que permite indagar los efectos de la interrelaci\'on entre los diferentes tipos de variable en lugar de los hechos.\\
 
-	En este punto se determinó la profundidad que abarca esta investigaci\'on, teniendo en cuenta que de acuerdo con  el nivel de la investigaci\'on es definido como “grado de profundidad con que se aborda un fen\'omeno u objeto de estudio” (Arias, 2012).\\
+	En este punto se determin\'o la profundidad que abarca esta investigaci\'on, teniendo en cuenta que de acuerdo con  el nivel de la investigaci\'on es definido como “grado de profundidad con que se aborda un fen\'omeno u objeto de estudio” (Arias, 2012).\\
 
 	En este sentido, se tiene que dadas las caracter\'isticas del proyecto, se asocia con un nivel descriptivo, tal como lo indican Pallela y  Martins (2012),  “hace \'enfasis sobre conclusiones dominantes o sobre como una persona, grupo o cosa se conduce o funciona en el presente” esto debido a que se midieron los datos extra\'idos sin alterarlos para ser mostrados en el sistema.\\
 
@@ -26,10 +26,10 @@ Esto indica que no hay manipulaci\'on de variables. Esta investigaci\'on present
 
 \section{Metodolog\'ia}
 
-Para el desarrollo del paquete  se sigui\'o las pautas est\'andar establecidas para la creación de paquetes y extensiones en R.\\
+Para el desarrollo del paquete  se sigui\'o las pautas est\'andar establecidas para la creaci\'on de paquetes y extensiones en R.\\
 
 \noindent
-\textbf{Creación del esqueleto del paquete.}\\
+\textbf{Creaci\'on del esqueleto del paquete.}\\
 
 
 En esta etapa se dise\~naron y crearon los directorios, ficheros y objetos que conforman el paquete.\\ 
@@ -37,7 +37,7 @@ En esta etapa se dise\~naron y crearon los directorios, ficheros y objetos que c
 \noindent
 \textbf{Registrar el m\'etodo para el env\'io y uso de funciones.}\\
 
-En esta etapa del desarrollo se estableci\'o las dependencias sobre los paquetes de la base fuente de código R y sus métodos de conexión, considerando el manejo de versiones y los criterios de mantenimiento, además  se estableci\'o  los espacios de nombre o las estrategias para la búsqueda y utilización de las variables; unificando estos criterios a las funciones que fueron dise\~nadas.\\
+En esta etapa del desarrollo se estableci\'o las dependencias sobre los paquetes de la base fuente de c\'odigo R y sus m\'etodos de conexi\'on, considerando el manejo de versiones y los criterios de mantenimiento, adem\'as  se estableci\'o  los espacios de nombre o las estrategias para la b\'usqueda y utilizaci\'on de las variables; unificando estos criterios a las funciones que fueron dise\~nadas.\\
 
 \noindent
 \textbf{Dise\~no y codificaci\'on de las funciones.}\\
@@ -54,40 +54,40 @@ Debido a que los paquetes en R est\'an conformados, entre otros elementos por la
 \noindent
 \textbf{Chequear la carga del paquete.}\\
 
-En esta etapa del desarrollo se utiliz\'o las funciones de chequear el paquete que ofrece el código R; cuya finalidad es verificar cada fichero del árbol de carpetas asociadas a cada elemento de la estructura o esqueleto del paquete, que a su vez crea el archivo de documentación en LaTeX y/o HTML, compila el código fuente y crea las librerías de enlace dinámico (\emph{dynamic link library} DLL).\\  
+En esta etapa del desarrollo se utiliz\'o las funciones de chequear el paquete que ofrece el c\'odigo R; cuya finalidad es verificar cada fichero del \'arbol de carpetas asociadas a cada elemento de la estructura o esqueleto del paquete, que a su vez crea el archivo de documentaci\'on en LaTeX y/o HTML, compila el c\'odigo fuente y crea las librerías de enlace din\'amico (\emph{dynamic link library} DLL).\\  
 
 \noindent
 \textbf{Construcci\'on del m\'etodo de distribuci\'on del paquete.}\\
 
-Se seleccion\'o la forma de distribución del paquete desde el repositorio local, creando los ficheros fuentes  (en formato  \emph{tarball})  y en binario.\\
+Se seleccion\'o la forma de distribuci\'on del paquete desde el repositorio local, creando los ficheros fuentes  (en formato  \emph{tarball})  y en binario.\\
 
 \section{Aspectos administrativos}
 
 \vspace{1 cm}
-La realización de la investigación fue planificada según lo establecido en el siguiente diagrama:\\
+La realizaci\'on de la investigaci\'on fue planificada seg\'un lo establecido en el siguiente diagrama:\\
 
 \begin{figure}[!ht]
 \begin{center}
 
 \begin{ganttchart}[y unit title=0.4cm,y unit chart=0.5cm,vgrid,hgrid,title height=1,bar/.style={draw,fill=cyan},bar incomplete/.append style={fill=yellow!50},bar height=0.7]{1}{16}
  \gantttitle{Pasos}{16}\\
- \ganttbar{\tiny{Determinación de los lineamientos para el dise\~no del paquete}}{1}{2} \\
- \ganttbar{\tiny{Creación del esqueleto del paquete}}{3}{3} \\
+ \ganttbar{\tiny{Determinaci\'on de los lineamientos para el dise\~no del paquete}}{1}{2} \\
+ \ganttbar{\tiny{Creaci\'on del esqueleto del paquete}}{3}{3} \\
  \ganttbar{\tiny{Dise\~no de los algoritmos para la biblioteca de funciones}}{3}{6} \\
- \ganttbar{\tiny{Codificación de la biblioteca de funciones}}{6}{10} \\
+ \ganttbar{\tiny{Codificaci\'on de la biblioteca de funciones}}{6}{10} \\
  \ganttbar{\tiny{Prueba de la biblioteca de funciones}}{9}{11} \\
- \ganttbar{\tiny{Documentación del paquete}}{4}{12} \\
+ \ganttbar{\tiny{Documentaci\'on del paquete}}{4}{12} \\
  \ganttbar{\tiny{Chequeo del paquete}}{10}{12} \\
- \ganttbar{\tiny{Creación del método de distribución del paquete}}{13}{14} \\
- \ganttbar{\tiny{Pruebas de distribución del paquete}}{15}{16} \\
+ \ganttbar{\tiny{Creaci\'on del m\'etodo de distribuci\'on del paquete}}{13}{14} \\
+ \ganttbar{\tiny{Pruebas de distribuci\'on del paquete}}{15}{16} \\
 %  \ganttbar[progress=70]{Fase 3}{13}{18} \\
  % \ganttbar[progress=40]{Conclus\~ao}{20}{24} \\
- \ganttbar{\tiny{Realización del informe del proyecto especial de grado}}{2}{16} \\
+ \ganttbar{\tiny{Realizaci\'on del informe del proyecto especial de grado}}{2}{16} \\
  \ganttlink{elem0}{elem1}
  \ganttlink{elem6}{elem7}
  \ganttlink{elem7}{elem8}
 \end{ganttchart}
 
 \end{center}
-\caption{Diagrama de Gantt con la planificación del proyecto especial de grado}
+\caption{Diagrama de Gantt con la planificaci\'on del proyecto especial de grado}
 \end{figure}
