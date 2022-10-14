@@ -101,13 +101,11 @@ En esta primera etapa se crea la estructura del paquete, adem\'as, se cargan los
 
 Se determina que la funci\'on principal reciba una lista de par\'ametros de entrada que sirven para calcular los valores de simulaci\'on del modelo, estos pueden ser opcionales, y todos deben ser num\'ericos, en caso de que no se defina alg\'un par\'ametro se cargan los valores por defecto correspondientes.\\
 
-TODO: Agregar lista de parametros por defecto (tabla)
-
 La primera funci\'on es \textit{calculate\textunderscore{momos()}} cuya salida muestra los valores de CM y RA simulados por cada instante de tiempo en un intervalo determinado, esta salida Figura 4.7 es un \textit{data frame} que corresponde a los datos simulados por el modelo din\'amico. Entendi\'endose como un data frame seg\'un Santana y Nieves (2014) “una clase de objetos especial en R. Normalmente, cuando se realiza un estudio estad \'istico sobre los sujetos u objetos de una muestra, la informaci\'on se organiza en un dataframe: una hoja de datos, en los que cada fila corresponde a un sujeto y cada columna a una variable. La estructura de un data frame es muy similar a la de una matriz. La diferencia es que una matriz s\'olo admite valores num\'ericos, mientras que en un data frame podemos incluir tambi\'en datos alfanum\'ericos."\\
 
-Por lo tanto, para esta funci\'on desarrollada, las columnas del data frame corresponden a las variables de estudio (CM / RA) (TODO: Agregar definicion de CM / RA) y las filas a los valores de las mismas en cada intervalo de tiempo.\\
+Por lo tanto, para esta funci\'on desarrollada, las columnas del data frame corresponden a las variables de estudio (CM / RA) y las filas a los valores de las mismas en cada intervalo de tiempo.\\
 
-El modelo din\'amico genera una salida sin calibrar, esto puede producir que al comparar los datos reales con los datos simulados exista una gran diferencia entre los datos, por esta raz\'on, se decide diseñar una segunda funci\'on \textit{calibrate\textunderscore{momos()}} para realizar la calibraci\'on de los par\'ametros de entrada que afectan directamente las variables de salida (CM / RA), esto con el fin de buscar los valores ideales usando el algoritmo de levenberg marquart (TODO: Agregar informacion del algoritmo), con estos nuevos valores Figura 4.8 se busca asegurar un margen de error menor.\\
+El modelo din\'amico genera una salida sin calibrar, esto puede producir que al comparar los datos reales con los datos simulados exista una gran diferencia entre los datos, por esta raz\'on, se decide diseñar una segunda funci\'on \textit{calibrate\textunderscore{momos()}} para realizar la calibraci\'on de los par\'ametros de entrada que afectan directamente las variables de salida (CM / RA), esto con el fin de buscar los valores ideales usando el algoritmo de levenberg marquart, con estos nuevos valores Figura 4.8 se busca asegurar un margen de error menor.\\
 
 Adicionalmente, el resultado de esta funci\'on muestra tambi\'en los valores ideales de los par\'ametros que fueron usados para calibrar el modelo iterando nuevamente sobre la funci\'on \textit{calculate\textunderscore{momos()}}.\\
 
@@ -144,7 +142,7 @@ La codificaci\'on de las funciones se realizaron en el IDE(Entorno de desarrollo
 \noindent
 \textbf{Diseño de las soluciones algor\'itmicas, para el c\'alculo del modelo momos}\\
 
-El objetivo funcional de \textit{calculate\textunderscore{momos()}} es obtener los valores resultantes de la ejecuci\'on de MOMOS planteado por Valery (2018) para ello es necesario establecer los valores por defecto de los par\'ametros y constantes facilitados por el autor del modelo de esta investigaci\'on o los definidos por el usuario del paquete:
+El objetivo funcional de \textit{calculate\textunderscore{momos()}} es obtener los valores resultantes de la ejecuci\'on del modelo MOMOS para ello es necesario establecer los valores por defecto de los par\'ametros y constantes facilitados por el autor del modelo de esta investigaci\'on o los definidos por el usuario del paquete:
 
 \begin{figure}[H]
   \centering

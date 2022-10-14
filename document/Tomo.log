@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.19)  14 OCT 2022 00:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.19)  14 OCT 2022 09:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1606,23 +1606,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
-
- []
-
-LaTeX Info: Redefining \. on input line 164.
-LaTeX Info: Redefining \% on input line 164.
-[13]
-LaTeX Info: Redefining \. on input line 178.
-LaTeX Info: Redefining \% on input line 178.
- [14]
-LaTeX Info: Redefining \. on input line 196.
-LaTeX Info: Redefining \% on input line 196.
- [15])
+LaTeX Info: Redefining \. on input line 163.
+LaTeX Info: Redefining \% on input line 163.
+[13])
 LaTeX Info: Redefining \. on input line 96.
 LaTeX Info: Redefining \% on input line 96.
- [16]
+ [14]
 \openout2 = `capitulo3.aux'.
 
  (./capitulo3.tex
@@ -1647,7 +1636,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
-[17
+[15
 
 
 
@@ -1682,7 +1671,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 30.
 LaTeX Info: Redefining \% on input line 30.
- [18]
+ [16]
 Underfull \hbox (badness 10000) in paragraph at lines 31--33
 
  []
@@ -1724,7 +1713,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
 LaTeX Info: Redefining \. on input line 53.
 LaTeX Info: Redefining \% on input line 53.
-[19]
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 54--56
 
  []
@@ -1752,7 +1741,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--68
 )
 LaTeX Info: Redefining \. on input line 97.
 LaTeX Info: Redefining \% on input line 97.
- [20]
+ [18]
 \openout2 = `capitulo4.aux'.
 
  (./capitulo4.tex
@@ -1782,7 +1771,7 @@ Overfull \hbox (20.11375pt too wide) in paragraph at lines 14--15
 []\OT1/cmr/m/n/12 testthat(Wickham, H. \OT1/cmr/m/it/12 et. al, \OT1/cmr/m/n/12 2022; dis-po-ni-ble en [][]$\OT1/cmtt/m/n/12 https : / / cran . r-[]project . org / web / packages /
  []
 
-[21
+[19
 
 
 
@@ -1827,7 +1816,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--28
 
  []
 
-<figure_4_1.png, id=417, 784.9325pt x 554.07pt>
+<figure_4_1.png, id=376, 784.9325pt x 554.07pt>
 File: figure_4_1.png Graphic file (type png)
 <use figure_4_1.png>
 Package pdftex.def Info: figure_4_1.png  used on input line 35.
@@ -1837,34 +1826,34 @@ Underfull \vbox (badness 1342) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 41.
 LaTeX Info: Redefining \% on input line 41.
- [22]
-<figure_4_2.png, id=432, 543.02875pt x 387.4475pt>
+ [20]
+<figure_4_2.png, id=391, 543.02875pt x 387.4475pt>
 File: figure_4_2.png Graphic file (type png)
 <use figure_4_2.png>
 Package pdftex.def Info: figure_4_2.png  used on input line 46.
 (pdftex.def)             Requested size: 320.3122pt x 228.55066pt.
-<figure_4_3.png, id=433, 537.00626pt x 380.42125pt>
+<figure_4_3.png, id=392, 537.00626pt x 380.42125pt>
 File: figure_4_3.png Graphic file (type png)
 <use figure_4_3.png>
 Package pdftex.def Info: figure_4_3.png  used on input line 57.
 (pdftex.def)             Requested size: 320.3122pt x 226.9136pt.
 LaTeX Info: Redefining \. on input line 63.
 LaTeX Info: Redefining \% on input line 63.
- [23 <./figure_4_1.png> <./figure_4_2.png>]
-<figure_4_4.png, id=440, 531.9875pt x 378.41376pt>
+ [21 <./figure_4_1.png> <./figure_4_2.png>]
+<figure_4_4.png, id=399, 531.9875pt x 378.41376pt>
 File: figure_4_4.png Graphic file (type png)
 <use figure_4_4.png>
 Package pdftex.def Info: figure_4_4.png  used on input line 68.
 (pdftex.def)             Requested size: 320.3122pt x 227.84683pt.
-<figure_4_5.png, id=441, 1104.125pt x 243.91125pt>
+<figure_4_5.png, id=400, 1104.125pt x 243.91125pt>
 File: figure_4_5.png Graphic file (type png)
 <use figure_4_5.png>
 Package pdftex.def Info: figure_4_5.png  used on input line 79.
 (pdftex.def)             Requested size: 400.38872pt x 88.44812pt.
 LaTeX Info: Redefining \. on input line 85.
 LaTeX Info: Redefining \% on input line 85.
- [24 <./figure_4_3.png> <./figure_4_4.png>]
-<figure_4_6.png, id=448, 639.38875pt x 168.63pt>
+ [22 <./figure_4_3.png> <./figure_4_4.png>]
+<figure_4_6.png, id=407, 639.38875pt x 168.63pt>
 File: figure_4_6.png Graphic file (type png)
 <use figure_4_6.png>
 Package pdftex.def Info: figure_4_6.png  used on input line 90.
@@ -1875,13 +1864,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--103
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
 
-LaTeX Info: Redefining \. on input line 108.
-LaTeX Info: Redefining \% on input line 108.
-[25 <./figure_4_5.png> <./figure_4_6.png>]
+LaTeX Info: Redefining \. on input line 107.
+LaTeX Info: Redefining \% on input line 107.
+[23 <./figure_4_5.png> <./figure_4_6.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
@@ -1896,98 +1890,98 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--113
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--115
-
- []
-
-<figure_4_7.png, id=455, 226.8475pt x 589.20125pt>
+<figure_4_7.png, id=414, 226.8475pt x 589.20125pt>
 File: figure_4_7.png Graphic file (type png)
 <use figure_4_7.png>
-Package pdftex.def Info: figure_4_7.png  used on input line 122.
+Package pdftex.def Info: figure_4_7.png  used on input line 120.
 (pdftex.def)             Requested size: 187.68149pt x 487.47256pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 128.
-LaTeX Info: Redefining \% on input line 128.
- [26]
-<figure_4_8.png, id=461, 212.795pt x 571.13374pt>
+LaTeX Info: Redefining \. on input line 126.
+LaTeX Info: Redefining \% on input line 126.
+ [24]
+<figure_4_8.png, id=419, 212.795pt x 571.13374pt>
 File: figure_4_8.png Graphic file (type png)
 <use figure_4_8.png>
-Package pdftex.def Info: figure_4_8.png  used on input line 133.
+Package pdftex.def Info: figure_4_8.png  used on input line 131.
 (pdftex.def)             Requested size: 187.68149pt x 503.75832pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 139.
-LaTeX Info: Redefining \% on input line 139.
- [27 <./figure_4_7.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 144--146
+LaTeX Info: Redefining \. on input line 137.
+LaTeX Info: Redefining \% on input line 137.
+ [25 <./figure_4_7.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 142--144
 
  []
 
-LaTeX Info: Redefining \. on input line 146.
-LaTeX Info: Redefining \% on input line 146.
-[28 <./figure_4_8.png>]
-<figure_4_9.png, id=472, 568.1225pt x 380.42125pt>
+LaTeX Info: Redefining \. on input line 144.
+LaTeX Info: Redefining \% on input line 144.
+[26 <./figure_4_8.png>]
+<figure_4_9.png, id=431, 568.1225pt x 380.42125pt>
 File: figure_4_9.png Graphic file (type png)
 <use figure_4_9.png>
-Package pdftex.def Info: figure_4_9.png  used on input line 153.
+Package pdftex.def Info: figure_4_9.png  used on input line 151.
 (pdftex.def)             Requested size: 320.3122pt x 214.49142pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
+Underfull \hbox (badness 10000) in paragraph at lines 158--159
 
  []
 
-<figure_4_10.png, id=473, 226.8475pt x 144.54pt>
+<figure_4_10.png, id=432, 226.8475pt x 144.54pt>
 File: figure_4_10.png Graphic file (type png)
 <use figure_4_10.png>
-Package pdftex.def Info: figure_4_10.png  used on input line 166.
+Package pdftex.def Info: figure_4_10.png  used on input line 164.
 (pdftex.def)             Requested size: 180.17789pt x 114.80507pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
+Underfull \hbox (badness 10000) in paragraph at lines 171--172
 
  []
 
-LaTeX Info: Redefining \. on input line 174.
-LaTeX Info: Redefining \% on input line 174.
-[29 <./figure_4_9.png> <./figure_4_10.png>]
-<figure_4_11.png, id=480, 403.5075pt x 376.40625pt>
+LaTeX Info: Redefining \. on input line 172.
+LaTeX Info: Redefining \% on input line 172.
+[27 <./figure_4_9.png> <./figure_4_10.png>]
+<figure_4_11.png, id=440, 403.5075pt x 376.40625pt>
 File: figure_4_11.png Graphic file (type png)
 <use figure_4_11.png>
-Package pdftex.def Info: figure_4_11.png  used on input line 179.
+Package pdftex.def Info: figure_4_11.png  used on input line 177.
 (pdftex.def)             Requested size: 320.3122pt x 298.79929pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
-LaTeX Info: Redefining \. on input line 194.
-LaTeX Info: Redefining \% on input line 194.
-[30 <./figure_4_11.png>]
-<figure_4_12.png, id=486, 215.80624pt x 151.56625pt>
+LaTeX Info: Redefining \. on input line 192.
+LaTeX Info: Redefining \% on input line 192.
+[28 <./figure_4_11.png>]
+<figure_4_12.png, id=446, 215.80624pt x 151.56625pt>
 File: figure_4_12.png Graphic file (type png)
 <use figure_4_12.png>
-Package pdftex.def Info: figure_4_12.png  used on input line 200.
+Package pdftex.def Info: figure_4_12.png  used on input line 198.
 (pdftex.def)             Requested size: 180.17789pt x 126.54695pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--208
+Underfull \hbox (badness 10000) in paragraph at lines 205--206
 
  []
 
-<figure_4_13.png, id=487, 198.7425pt x 548.0475pt>
+<figure_4_13.png, id=447, 198.7425pt x 548.0475pt>
 File: figure_4_13.png Graphic file (type png)
 <use figure_4_13.png>
-Package pdftex.def Info: figure_4_13.png  used on input line 213.
+Package pdftex.def Info: figure_4_13.png  used on input line 211.
 (pdftex.def)             Requested size: 151.39807pt x 417.5072pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 219.
-LaTeX Info: Redefining \% on input line 219.
- [31 <./figure_4_12.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 220--222
+LaTeX Info: Redefining \. on input line 217.
+LaTeX Info: Redefining \% on input line 217.
+ [29 <./figure_4_12.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 218--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
 
  []
 
@@ -1996,160 +1990,155 @@ Underfull \hbox (badness 10000) in paragraph at lines 223--224
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--226
-
- []
-
-LaTeX Info: Redefining \. on input line 226.
-LaTeX Info: Redefining \% on input line 226.
-[32 <./figure_4_13.png>]
-<figure_4_14.png, id=499, 701.62125pt x 63.23625pt>
+LaTeX Info: Redefining \. on input line 224.
+LaTeX Info: Redefining \% on input line 224.
+[30 <./figure_4_13.png>]
+<figure_4_14.png, id=458, 701.62125pt x 63.23625pt>
 File: figure_4_14.png Graphic file (type png)
 <use figure_4_14.png>
-Package pdftex.def Info: figure_4_14.png  used on input line 231.
+Package pdftex.def Info: figure_4_14.png  used on input line 229.
 (pdftex.def)             Requested size: 500.484pt x 45.10934pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--240
+Underfull \hbox (badness 10000) in paragraph at lines 236--238
 
  []
 
-<figure_4_15.png, id=500, 686.565pt x 420.57124pt>
+<figure_4_15.png, id=459, 686.565pt x 420.57124pt>
 File: figure_4_15.png Graphic file (type png)
 <use figure_4_15.png>
-Package pdftex.def Info: figure_4_15.png  used on input line 245.
+Package pdftex.def Info: figure_4_15.png  used on input line 243.
 (pdftex.def)             Requested size: 405.38652pt x 248.32741pt.
-<figure_4_16.png, id=501, 472.76625pt x 120.45pt>
+<figure_4_16.png, id=460, 472.76625pt x 120.45pt>
 File: figure_4_16.png Graphic file (type png)
 <use figure_4_16.png>
-Package pdftex.def Info: figure_4_16.png  used on input line 258.
+Package pdftex.def Info: figure_4_16.png  used on input line 256.
 (pdftex.def)             Requested size: 320.3122pt x 81.609pt.
-LaTeX Info: Redefining \. on input line 263.
-LaTeX Info: Redefining \% on input line 263.
-[33 <./figure_4_14.png> <./figure_4_15.png>]
-<figure_4_17.png, id=508, 374.39874pt x 93.34875pt>
+LaTeX Info: Redefining \. on input line 261.
+LaTeX Info: Redefining \% on input line 261.
+[31 <./figure_4_14.png> <./figure_4_15.png>]
+<figure_4_17.png, id=467, 374.39874pt x 93.34875pt>
 File: figure_4_17.png Graphic file (type png)
 <use figure_4_17.png>
-Package pdftex.def Info: figure_4_17.png  used on input line 269.
+Package pdftex.def Info: figure_4_17.png  used on input line 267.
 (pdftex.def)             Requested size: 320.3122pt x 79.86812pt.
 File: figure_4_13.png Graphic file (type png)
 <use figure_4_13.png>
-Package pdftex.def Info: figure_4_13.png  used on input line 282.
+Package pdftex.def Info: figure_4_13.png  used on input line 280.
 (pdftex.def)             Requested size: 125.12099pt x 345.0376pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 288.
-LaTeX Info: Redefining \% on input line 288.
- [34 <./figure_4_16.png> <./figure_4_17.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 289--291
+LaTeX Info: Redefining \. on input line 286.
+LaTeX Info: Redefining \% on input line 286.
+ [32 <./figure_4_16.png> <./figure_4_17.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 287--289
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--293
+Underfull \hbox (badness 10000) in paragraph at lines 290--291
 
  []
 
-<figure_4_19.png, id=515, 993.7125pt x 335.2525pt>
+<figure_4_19.png, id=475, 993.7125pt x 335.2525pt>
 File: figure_4_19.png Graphic file (type png)
 <use figure_4_19.png>
-Package pdftex.def Info: figure_4_19.png  used on input line 298.
+Package pdftex.def Info: figure_4_19.png  used on input line 296.
 (pdftex.def)             Requested size: 500.484pt x 168.85356pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 304.
-LaTeX Info: Redefining \% on input line 304.
- [35]
-Underfull \hbox (badness 10000) in paragraph at lines 305--307
+LaTeX Info: Redefining \. on input line 302.
+LaTeX Info: Redefining \% on input line 302.
+ [33]
+Underfull \hbox (badness 10000) in paragraph at lines 303--305
 
  []
 
-<figure_4_20.png, id=520, 789.95125pt x 574.145pt>
+<figure_4_20.png, id=480, 789.95125pt x 574.145pt>
 File: figure_4_20.png Graphic file (type png)
 <use figure_4_20.png>
-Package pdftex.def Info: figure_4_20.png  used on input line 312.
+Package pdftex.def Info: figure_4_20.png  used on input line 310.
 (pdftex.def)             Requested size: 500.484pt x 363.75452pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 318.
-LaTeX Info: Redefining \% on input line 318.
- [36 <./figure_4_19.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 320--321
+LaTeX Info: Redefining \. on input line 316.
+LaTeX Info: Redefining \% on input line 316.
+ [34 <./figure_4_19.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 318--319
 
  []
 
-<figure_4_21.png, id=526, 795.97375pt x 478.78876pt>
+<figure_4_21.png, id=486, 795.97375pt x 478.78876pt>
 File: figure_4_21.png Graphic file (type png)
 <use figure_4_21.png>
-Package pdftex.def Info: figure_4_21.png  used on input line 326.
+Package pdftex.def Info: figure_4_21.png  used on input line 324.
 (pdftex.def)             Requested size: 500.484pt x 301.04674pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 332.
-LaTeX Info: Redefining \% on input line 332.
- [37 <./figure_4_20.png>]
-<figure_4_22.png, id=532, 800.9925pt x 283.0575pt>
+LaTeX Info: Redefining \. on input line 330.
+LaTeX Info: Redefining \% on input line 330.
+ [35 <./figure_4_20.png>]
+<figure_4_22.png, id=492, 800.9925pt x 283.0575pt>
 File: figure_4_22.png Graphic file (type png)
 <use figure_4_22.png>
-Package pdftex.def Info: figure_4_22.png  used on input line 339.
+Package pdftex.def Info: figure_4_22.png  used on input line 337.
 (pdftex.def)             Requested size: 500.484pt x 176.8673pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 348--349
+Underfull \hbox (badness 10000) in paragraph at lines 346--347
 
  []
 
 
 Underfull \vbox (badness 2799) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 349.
-LaTeX Info: Redefining \% on input line 349.
- [38 <./figure_4_21.png> <./figure_4_22.png>]
-<figure_4_23.png, id=540, 793.96625pt x 474.77374pt>
+LaTeX Info: Redefining \. on input line 347.
+LaTeX Info: Redefining \% on input line 347.
+ [36 <./figure_4_21.png> <./figure_4_22.png>]
+<figure_4_23.png, id=499, 793.96625pt x 474.77374pt>
 File: figure_4_23.png Graphic file (type png)
 <use figure_4_23.png>
-Package pdftex.def Info: figure_4_23.png  used on input line 354.
+Package pdftex.def Info: figure_4_23.png  used on input line 352.
 (pdftex.def)             Requested size: 500.484pt x 299.2829pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--364
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
 
  []
 
-<figure_4_24.png, id=541, 797.98125pt x 478.78876pt>
+<figure_4_24.png, id=500, 797.98125pt x 478.78876pt>
 File: figure_4_24.png Graphic file (type png)
 <use figure_4_24.png>
-Package pdftex.def Info: figure_4_24.png  used on input line 369.
+Package pdftex.def Info: figure_4_24.png  used on input line 367.
 (pdftex.def)             Requested size: 500.484pt x 300.29425pt.
-LaTeX Info: Redefining \. on input line 375.
-LaTeX Info: Redefining \% on input line 375.
-[39 <./figure_4_23.png>]
-<figure_4_25.png, id=547, 797.98125pt x 480.79625pt>
+LaTeX Info: Redefining \. on input line 373.
+LaTeX Info: Redefining \% on input line 373.
+[37 <./figure_4_23.png>]
+<figure_4_25.png, id=506, 797.98125pt x 480.79625pt>
 File: figure_4_25.png Graphic file (type png)
 <use figure_4_25.png>
-Package pdftex.def Info: figure_4_25.png  used on input line 380.
+Package pdftex.def Info: figure_4_25.png  used on input line 378.
 (pdftex.def)             Requested size: 500.484pt x 301.55334pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Info: Redefining \. on input line 386.
-LaTeX Info: Redefining \% on input line 386.
- [40 <./figure_4_24.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 387--388
+LaTeX Info: Redefining \. on input line 384.
+LaTeX Info: Redefining \% on input line 384.
+ [38 <./figure_4_24.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 385--386
 
  []
 
-<figure_4_26.png, id=554, 252.945pt x 184.69pt>
+<figure_4_26.png, id=514, 252.945pt x 184.69pt>
 File: figure_4_26.png Graphic file (type png)
 <use figure_4_26.png>
-Package pdftex.def Info: figure_4_26.png  used on input line 393.
+Package pdftex.def Info: figure_4_26.png  used on input line 391.
 (pdftex.def)             Requested size: 180.17789pt x 131.56197pt.
 )
 LaTeX Info: Redefining \. on input line 98.
 LaTeX Info: Redefining \% on input line 98.
- [41 <./figure_4_25.png> <./figure_4_26.png>]
+ [39 <./figure_4_25.png> <./figure_4_26.png>]
 \openout2 = `capitulo5.aux'.
 
  (./capitulo5.tex
@@ -2174,7 +2163,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
-) [42
+) [40
 
 
 
@@ -2227,20 +2216,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 142--144
 
  []
 
-)
-Underfull \hbox (badness 10000) in paragraph at lines 145--100
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--147
 
  []
 
-[43
+[41
 
 
 
 
-]
+])
+Underfull \hbox (badness 10000) in paragraph at lines 148--100
+
+ []
+
 LaTeX Info: Redefining \. on input line 100.
 LaTeX Info: Redefining \% on input line 100.
- [44] (./Tomo.aux (./titlepage.aux)
+[42] (./Tomo.aux (./titlepage.aux)
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
  (./intro.aux) (./capitulo1.aux) (./capitulo2.aux) (./capitulo3.aux) (./capitulo4.aux) (./capitulo5.aux) (./BLI.aux))
@@ -2251,18 +2244,18 @@ Package rerunfilecheck Info: File `Tomo.out' has not changed.
 (rerunfilecheck)             Checksum: 77D0785845C112AE78EF27071040C9C8;6228.
  ) 
 Here is how much of TeX's memory you used:
- 27333 strings out of 475075
- 523676 string characters out of 5779003
- 858777 words of memory out of 5000000
+ 27299 strings out of 475075
+ 523310 string characters out of 5779003
+ 858916 words of memory out of 5000000
  48026 multiletter control sequences out of 15000+600000
  478190 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,13n,94p,1294b,968s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Tomo.pdf (49 pages, 1093888 bytes).
+Output written on Tomo.pdf (47 pages, 1091984 bytes).
 PDF statistics:
- 671 PDF objects out of 1000 (max. 8388607)
- 538 compressed objects within 6 object streams
- 154 named destinations out of 1000 (max. 500000)
+ 624 PDF objects out of 1000 (max. 8388607)
+ 494 compressed objects within 5 object streams
+ 120 named destinations out of 1000 (max. 500000)
  415 words of extra memory for PDF output out of 10000 (max. 10000000)
 

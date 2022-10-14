@@ -2,32 +2,32 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagrama de Gantt con la planificaci\'on del proyecto especial de grado\relax }}{20}{figure.caption.42}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagrama de Gantt con la planificaci\'on del proyecto especial de grado\relax }}{18}{figure.caption.10}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Nuevo proyecto\relax }}{23}{figure.caption.43}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Nuevo directorio\relax }}{23}{figure.caption.44}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Tipo de proyecto\relax }}{24}{figure.caption.45}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Nombre del paquete y directorio de trabajo\relax }}{24}{figure.caption.46}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Estructura archivo DESCRIPTION\relax }}{25}{figure.caption.47}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Esqueleto del paquete\relax }}{25}{figure.caption.48}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Datos de s\'alida sin calibrar\relax }}{27}{figure.caption.49}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Datos de s\'alida calibrados\relax }}{28}{figure.caption.50}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Establecer par\'ametros y constantes\relax }}{29}{figure.caption.51}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Establecer la funci\'on inicial y\relax }}{29}{figure.caption.52}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Funci\'on derivaci\'on\relax }}{30}{figure.caption.53}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Ecuaci\'on diferencial\relax }}{31}{figure.caption.54}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Resultado de la ecuaci\'on diferencial\relax }}{32}{figure.caption.55}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Extracci\'on de datos experimentales\relax }}{33}{figure.caption.56}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Creaci\'on del vector de residuos\relax }}{33}{figure.caption.57}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Encontrar el valor ideal del par\'ametro Kresp\relax }}{34}{figure.caption.58}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Valor ideal del par\'ametro Kresp\relax }}{34}{figure.caption.59}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Dataframe con los datos calibrados de MOMOS\relax }}{35}{figure.caption.60}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces M\'etodo para graficar los resultados obtenidos\relax }}{36}{figure.caption.61}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Gr\'afica de los resultados obtenidos\relax }}{37}{figure.caption.62}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Resultado de las pruebas unitarias del paquete\relax }}{38}{figure.caption.63}%
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Cobertura de las pruebas sobre el c\'odigo creado\relax }}{38}{figure.caption.64}%
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Resultado del chequeo del paquete\relax }}{39}{figure.caption.65}%
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Resultado de la compilaci\'on del binario del paquete\relax }}{40}{figure.caption.66}%
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Resultado de la compilaci\'on del c\'odigo fuente del paquete\relax }}{41}{figure.caption.67}%
-\contentsline {figure}{\numberline {4.26}{\ignorespaces C\'odigo fuente y binario del paquete\relax }}{41}{figure.caption.68}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Nuevo proyecto\relax }}{21}{figure.caption.11}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Nuevo directorio\relax }}{21}{figure.caption.12}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Tipo de proyecto\relax }}{22}{figure.caption.13}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Nombre del paquete y directorio de trabajo\relax }}{22}{figure.caption.14}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Estructura archivo DESCRIPTION\relax }}{23}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Esqueleto del paquete\relax }}{23}{figure.caption.16}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Datos de s\'alida sin calibrar\relax }}{25}{figure.caption.17}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Datos de s\'alida calibrados\relax }}{26}{figure.caption.18}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Establecer par\'ametros y constantes\relax }}{27}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Establecer la funci\'on inicial y\relax }}{27}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Funci\'on derivaci\'on\relax }}{28}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Ecuaci\'on diferencial\relax }}{29}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Resultado de la ecuaci\'on diferencial\relax }}{30}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Extracci\'on de datos experimentales\relax }}{31}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Creaci\'on del vector de residuos\relax }}{31}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Encontrar el valor ideal del par\'ametro Kresp\relax }}{32}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Valor ideal del par\'ametro Kresp\relax }}{32}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Dataframe con los datos calibrados de MOMOS\relax }}{33}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces M\'etodo para graficar los resultados obtenidos\relax }}{34}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Gr\'afica de los resultados obtenidos\relax }}{35}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Resultado de las pruebas unitarias del paquete\relax }}{36}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Cobertura de las pruebas sobre el c\'odigo creado\relax }}{36}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Resultado del chequeo del paquete\relax }}{37}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Resultado de la compilaci\'on del binario del paquete\relax }}{38}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Resultado de la compilaci\'on del c\'odigo fuente del paquete\relax }}{39}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces C\'odigo fuente y binario del paquete\relax }}{39}{figure.caption.36}%
 \addvspace {10\p@ }
