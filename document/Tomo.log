@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.19)  14 OCT 2022 00:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.19)  14 OCT 2022 00:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1121,7 +1121,7 @@ File: l3backend-pdftex.def 2022-08-30 L3 backend support: PDF output (pdfTeX)
 ) (./Tomo.aux (./titlepage.aux)
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
- (./capitulo1.aux) (./capitulo2.aux) (./capitulo3.aux) (./capitulo4.aux
+ (./intro.aux) (./capitulo1.aux) (./capitulo2.aux) (./capitulo3.aux) (./capitulo4.aux
 
 LaTeX Warning: Label `fig:descripcion' multiply defined.
 
@@ -1336,8 +1336,8 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@lof=\write6
 \openout6 = `Tomo.lof'.
 
-LaTeX Info: Redefining \. on input line 95.
-LaTeX Info: Redefining \% on input line 95.
+LaTeX Info: Redefining \. on input line 94.
+LaTeX Info: Redefining \% on input line 94.
 
 
 Package fancyhdr Warning: \headheight is too small (15.0pt): 
@@ -1347,6 +1347,32 @@ Package fancyhdr Warning: \headheight is too small (15.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.71667pt}.
 
 [5]
+\openout2 = `intro.aux'.
+
+ (./intro.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 12--94
+
+ []
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.94 \include{intro}
+                     [1
+
+
+]
 \openout2 = `capitulo1.aux'.
 
  (./capitulo1.tex
@@ -1366,7 +1392,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-[6
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.10 P
+      or lo que la comprensi\'on de los diferentes procesos y transformacion... [2
+
+
 
 
 ]
@@ -1391,7 +1424,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
 LaTeX Info: Redefining \. on input line 17.
 LaTeX Info: Redefining \% on input line 17.
-[7]
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.17 
+      [3]
 Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
  []
@@ -1403,7 +1441,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--95
 
 LaTeX Info: Redefining \. on input line 95.
 LaTeX Info: Redefining \% on input line 95.
-[8]
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.95 \include{capitulo1}
+                         [4]
 \openout2 = `capitulo2.aux'.
 
  (./capitulo2.tex
@@ -1428,7 +1471,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-[9
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.12 
+      [5
 
 
 
@@ -1460,7 +1508,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
-[10]
+[6]
 Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
@@ -1487,7 +1535,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
 LaTeX Info: Redefining \. on input line 46.
 LaTeX Info: Redefining \% on input line 46.
-[11]
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
@@ -1504,7 +1552,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 60--61
 
 LaTeX Info: Redefining \. on input line 61.
 LaTeX Info: Redefining \% on input line 61.
-[12]
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
@@ -1531,17 +1579,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 72--73
 
 LaTeX Info: Redefining \. on input line 74.
 LaTeX Info: Redefining \% on input line 74.
-[13]
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
 LaTeX Info: Redefining \. on input line 102.
 LaTeX Info: Redefining \% on input line 102.
-[14]
+[10]
 LaTeX Info: Redefining \. on input line 124.
 LaTeX Info: Redefining \% on input line 124.
- [15]
+ [11]
 Underfull \hbox (badness 10000) in paragraph at lines 140--141
 
  []
@@ -1553,7 +1601,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--146
 
 LaTeX Info: Redefining \. on input line 146.
 LaTeX Info: Redefining \% on input line 146.
-[16]
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
@@ -1565,16 +1613,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 159--160
 
 LaTeX Info: Redefining \. on input line 164.
 LaTeX Info: Redefining \% on input line 164.
-[17]
+[13]
 LaTeX Info: Redefining \. on input line 178.
 LaTeX Info: Redefining \% on input line 178.
- [18]
+ [14]
 LaTeX Info: Redefining \. on input line 196.
 LaTeX Info: Redefining \% on input line 196.
- [19])
+ [15])
 LaTeX Info: Redefining \. on input line 96.
 LaTeX Info: Redefining \% on input line 96.
- [20]
+ [16]
 \openout2 = `capitulo3.aux'.
 
  (./capitulo3.tex
@@ -1599,7 +1647,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
-[21
+[17
 
 
 
@@ -1634,7 +1682,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 30.
 LaTeX Info: Redefining \% on input line 30.
- [22]
+ [18]
 Underfull \hbox (badness 10000) in paragraph at lines 31--33
 
  []
@@ -1676,7 +1724,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
 LaTeX Info: Redefining \. on input line 53.
 LaTeX Info: Redefining \% on input line 53.
-[23]
+[19]
 Underfull \hbox (badness 10000) in paragraph at lines 54--56
 
  []
@@ -1704,7 +1752,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--68
 )
 LaTeX Info: Redefining \. on input line 97.
 LaTeX Info: Redefining \% on input line 97.
- [24]
+ [20]
 \openout2 = `capitulo4.aux'.
 
  (./capitulo4.tex
@@ -1734,7 +1782,7 @@ Overfull \hbox (20.11375pt too wide) in paragraph at lines 14--15
 []\OT1/cmr/m/n/12 testthat(Wickham, H. \OT1/cmr/m/it/12 et. al, \OT1/cmr/m/n/12 2022; dis-po-ni-ble en [][]$\OT1/cmtt/m/n/12 https : / / cran . r-[]project . org / web / packages /
  []
 
-[25
+[21
 
 
 
@@ -1789,7 +1837,7 @@ Underfull \vbox (badness 1342) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 41.
 LaTeX Info: Redefining \% on input line 41.
- [26]
+ [22]
 <figure_4_2.png, id=432, 543.02875pt x 387.4475pt>
 File: figure_4_2.png Graphic file (type png)
 <use figure_4_2.png>
@@ -1802,7 +1850,7 @@ Package pdftex.def Info: figure_4_3.png  used on input line 57.
 (pdftex.def)             Requested size: 320.3122pt x 226.9136pt.
 LaTeX Info: Redefining \. on input line 63.
 LaTeX Info: Redefining \% on input line 63.
- [27 <./figure_4_1.png> <./figure_4_2.png>]
+ [23 <./figure_4_1.png> <./figure_4_2.png>]
 <figure_4_4.png, id=440, 531.9875pt x 378.41376pt>
 File: figure_4_4.png Graphic file (type png)
 <use figure_4_4.png>
@@ -1815,7 +1863,7 @@ Package pdftex.def Info: figure_4_5.png  used on input line 79.
 (pdftex.def)             Requested size: 400.38872pt x 88.44812pt.
 LaTeX Info: Redefining \. on input line 85.
 LaTeX Info: Redefining \% on input line 85.
- [28 <./figure_4_3.png> <./figure_4_4.png>]
+ [24 <./figure_4_3.png> <./figure_4_4.png>]
 <figure_4_6.png, id=448, 639.38875pt x 168.63pt>
 File: figure_4_6.png Graphic file (type png)
 <use figure_4_6.png>
@@ -1833,7 +1881,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
 LaTeX Info: Redefining \. on input line 108.
 LaTeX Info: Redefining \% on input line 108.
-[29 <./figure_4_5.png> <./figure_4_6.png>]
+[25 <./figure_4_5.png> <./figure_4_6.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 108--109
 
  []
@@ -1863,8 +1911,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 128.
 LaTeX Info: Redefining \% on input line 128.
- [30]
-<figure_4_8.png, id=460, 212.795pt x 571.13374pt>
+ [26]
+<figure_4_8.png, id=461, 212.795pt x 571.13374pt>
 File: figure_4_8.png Graphic file (type png)
 <use figure_4_8.png>
 Package pdftex.def Info: figure_4_8.png  used on input line 133.
@@ -1874,14 +1922,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 139.
 LaTeX Info: Redefining \% on input line 139.
- [31 <./figure_4_7.png>]
+ [27 <./figure_4_7.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 144--146
 
  []
 
 LaTeX Info: Redefining \. on input line 146.
 LaTeX Info: Redefining \% on input line 146.
-[32 <./figure_4_8.png>]
+[28 <./figure_4_8.png>]
 <figure_4_9.png, id=472, 568.1225pt x 380.42125pt>
 File: figure_4_9.png Graphic file (type png)
 <use figure_4_9.png>
@@ -1904,7 +1952,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
 LaTeX Info: Redefining \. on input line 174.
 LaTeX Info: Redefining \% on input line 174.
-[33 <./figure_4_9.png> <./figure_4_10.png>]
+[29 <./figure_4_9.png> <./figure_4_10.png>]
 <figure_4_11.png, id=480, 403.5075pt x 376.40625pt>
 File: figure_4_11.png Graphic file (type png)
 <use figure_4_11.png>
@@ -1917,7 +1965,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--187
 
 LaTeX Info: Redefining \. on input line 194.
 LaTeX Info: Redefining \% on input line 194.
-[34 <./figure_4_11.png>]
+[30 <./figure_4_11.png>]
 <figure_4_12.png, id=486, 215.80624pt x 151.56625pt>
 File: figure_4_12.png Graphic file (type png)
 <use figure_4_12.png>
@@ -1938,7 +1986,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 219.
 LaTeX Info: Redefining \% on input line 219.
- [35 <./figure_4_12.png>]
+ [31 <./figure_4_12.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 220--222
 
  []
@@ -1955,8 +2003,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 225--226
 
 LaTeX Info: Redefining \. on input line 226.
 LaTeX Info: Redefining \% on input line 226.
-[36 <./figure_4_13.png>]
-<figure_4_14.png, id=498, 701.62125pt x 63.23625pt>
+[32 <./figure_4_13.png>]
+<figure_4_14.png, id=499, 701.62125pt x 63.23625pt>
 File: figure_4_14.png Graphic file (type png)
 <use figure_4_14.png>
 Package pdftex.def Info: figure_4_14.png  used on input line 231.
@@ -1966,19 +2014,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 238--240
 
  []
 
-<figure_4_15.png, id=499, 686.565pt x 420.57124pt>
+<figure_4_15.png, id=500, 686.565pt x 420.57124pt>
 File: figure_4_15.png Graphic file (type png)
 <use figure_4_15.png>
 Package pdftex.def Info: figure_4_15.png  used on input line 245.
 (pdftex.def)             Requested size: 405.38652pt x 248.32741pt.
-<figure_4_16.png, id=500, 472.76625pt x 120.45pt>
+<figure_4_16.png, id=501, 472.76625pt x 120.45pt>
 File: figure_4_16.png Graphic file (type png)
 <use figure_4_16.png>
 Package pdftex.def Info: figure_4_16.png  used on input line 258.
 (pdftex.def)             Requested size: 320.3122pt x 81.609pt.
 LaTeX Info: Redefining \. on input line 263.
 LaTeX Info: Redefining \% on input line 263.
-[37 <./figure_4_14.png> <./figure_4_15.png>]
+[33 <./figure_4_14.png> <./figure_4_15.png>]
 <figure_4_17.png, id=508, 374.39874pt x 93.34875pt>
 File: figure_4_17.png Graphic file (type png)
 <use figure_4_17.png>
@@ -1993,7 +2041,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 288.
 LaTeX Info: Redefining \% on input line 288.
- [38 <./figure_4_16.png> <./figure_4_17.png>]
+ [34 <./figure_4_16.png> <./figure_4_17.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 289--291
 
  []
@@ -2013,7 +2061,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 304.
 LaTeX Info: Redefining \% on input line 304.
- [39]
+ [35]
 Underfull \hbox (badness 10000) in paragraph at lines 305--307
 
  []
@@ -2028,7 +2076,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 318.
 LaTeX Info: Redefining \% on input line 318.
- [40 <./figure_4_19.png>]
+ [36 <./figure_4_19.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 320--321
 
  []
@@ -2043,7 +2091,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 332.
 LaTeX Info: Redefining \% on input line 332.
- [41 <./figure_4_20.png>]
+ [37 <./figure_4_20.png>]
 <figure_4_22.png, id=532, 800.9925pt x 283.0575pt>
 File: figure_4_22.png Graphic file (type png)
 <use figure_4_22.png>
@@ -2059,8 +2107,8 @@ Underfull \vbox (badness 2799) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 349.
 LaTeX Info: Redefining \% on input line 349.
- [42 <./figure_4_21.png> <./figure_4_22.png>]
-<figure_4_23.png, id=539, 793.96625pt x 474.77374pt>
+ [38 <./figure_4_21.png> <./figure_4_22.png>]
+<figure_4_23.png, id=540, 793.96625pt x 474.77374pt>
 File: figure_4_23.png Graphic file (type png)
 <use figure_4_23.png>
 Package pdftex.def Info: figure_4_23.png  used on input line 354.
@@ -2070,14 +2118,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 363--364
 
  []
 
-<figure_4_24.png, id=540, 797.98125pt x 478.78876pt>
+<figure_4_24.png, id=541, 797.98125pt x 478.78876pt>
 File: figure_4_24.png Graphic file (type png)
 <use figure_4_24.png>
 Package pdftex.def Info: figure_4_24.png  used on input line 369.
 (pdftex.def)             Requested size: 500.484pt x 300.29425pt.
 LaTeX Info: Redefining \. on input line 375.
 LaTeX Info: Redefining \% on input line 375.
-[43 <./figure_4_23.png>]
+[39 <./figure_4_23.png>]
 <figure_4_25.png, id=547, 797.98125pt x 480.79625pt>
 File: figure_4_25.png Graphic file (type png)
 <use figure_4_25.png>
@@ -2088,7 +2136,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 386.
 LaTeX Info: Redefining \% on input line 386.
- [44 <./figure_4_24.png>]
+ [40 <./figure_4_24.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 387--388
 
  []
@@ -2101,7 +2149,7 @@ Package pdftex.def Info: figure_4_26.png  used on input line 393.
 )
 LaTeX Info: Redefining \. on input line 98.
 LaTeX Info: Redefining \% on input line 98.
- [45 <./figure_4_25.png> <./figure_4_26.png>]
+ [41 <./figure_4_25.png> <./figure_4_26.png>]
 \openout2 = `capitulo5.aux'.
 
  (./capitulo5.tex
@@ -2126,7 +2174,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
-) [46
+) [42
 
 
 
@@ -2184,7 +2232,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--100
 
  []
 
-[47
+[43
 
 
 
@@ -2192,10 +2240,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 145--100
 ]
 LaTeX Info: Redefining \. on input line 100.
 LaTeX Info: Redefining \% on input line 100.
- [48] (./Tomo.aux (./titlepage.aux)
+ [44] (./Tomo.aux (./titlepage.aux)
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
- (./capitulo1.aux) (./capitulo2.aux) (./capitulo3.aux) (./capitulo4.aux) (./capitulo5.aux) (./BLI.aux))
+ (./intro.aux) (./capitulo1.aux) (./capitulo2.aux) (./capitulo3.aux) (./capitulo4.aux) (./capitulo5.aux) (./BLI.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -2203,18 +2251,18 @@ Package rerunfilecheck Info: File `Tomo.out' has not changed.
 (rerunfilecheck)             Checksum: 77D0785845C112AE78EF27071040C9C8;6228.
  ) 
 Here is how much of TeX's memory you used:
- 27308 strings out of 475075
- 523044 string characters out of 5779003
- 858247 words of memory out of 5000000
- 48005 multiletter control sequences out of 15000+600000
+ 27333 strings out of 475075
+ 523676 string characters out of 5779003
+ 858777 words of memory out of 5000000
+ 48026 multiletter control sequences out of 15000+600000
  478190 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,13n,94p,1294b,968s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Tomo.pdf (48 pages, 1092438 bytes).
+Output written on Tomo.pdf (49 pages, 1093888 bytes).
 PDF statistics:
  671 PDF objects out of 1000 (max. 8388607)
- 539 compressed objects within 6 object streams
- 157 named destinations out of 1000 (max. 500000)
+ 538 compressed objects within 6 object streams
+ 154 named destinations out of 1000 (max. 500000)
  415 words of extra memory for PDF output out of 10000 (max. 10000000)
 

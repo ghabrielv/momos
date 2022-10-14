@@ -1,73 +1,73 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {chapter}{\numberline {1}El Problema}{6}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Planteamiento y formulaci\'on del problema}{6}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Objetivos}{8}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Objetivo General}{8}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Objetivos Espec\'ificos}{8}{subsection.1.2.2}%
-\contentsline {section}{\numberline {1.3}Justificaci\'on e Importancia}{8}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Alcance y Limitaciones}{8}{section.1.4}%
-\contentsline {chapter}{\numberline {2}Fundamentos Te\'oricos}{9}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Antecedentes}{9}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Bases Te\'oricas}{10}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Modelos}{10}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Lenguaje R.}{12}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}RStudio.}{12}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Algoritmos en R/RStudio.}{13}{subsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.5}Estructura de paquetes en R/RStudio.}{14}{subsection.2.2.5}%
-\contentsline {subsection}{\numberline {2.2.6}Pruebas est\'andar y pruebas funcionales}{16}{subsection.2.2.6}%
-\contentsline {subsection}{\numberline {2.2.7}Glosario}{18}{subsection.2.2.7}%
-\contentsline {paragraph}{C\'odigo fuente:}{18}{section*.3}%
-\contentsline {paragraph}{Crecimiento:}{18}{section*.4}%
-\contentsline {paragraph}{Data:}{18}{section*.5}%
-\contentsline {paragraph}{Modelo:}{18}{section*.6}%
-\contentsline {paragraph}{Lenguaje R:}{18}{section*.7}%
-\contentsline {paragraph}{R Studio:}{18}{section*.8}%
-\contentsline {paragraph}{Necromasa:}{18}{section*.9}%
-\contentsline {paragraph}{HL:}{18}{section*.10}%
-\contentsline {paragraph}{HLo:}{18}{section*.11}%
-\contentsline {paragraph}{HS:}{18}{section*.12}%
-\contentsline {paragraph}{HSo:}{18}{section*.13}%
-\contentsline {paragraph}{Co:}{18}{section*.14}%
-\contentsline {paragraph}{Kvl:}{18}{section*.15}%
-\contentsline {paragraph}{Kvs:}{19}{section*.16}%
-\contentsline {paragraph}{fs:}{19}{section*.17}%
-\contentsline {paragraph}{Khl:}{19}{section*.18}%
-\contentsline {paragraph}{Khs:}{19}{section*.19}%
-\contentsline {paragraph}{Khls:}{19}{section*.20}%
-\contentsline {paragraph}{Kmb:}{19}{section*.21}%
-\contentsline {paragraph}{Kresp:}{19}{section*.22}%
-\contentsline {paragraph}{Ci:}{19}{section*.23}%
-\contentsline {paragraph}{VL:}{19}{section*.24}%
-\contentsline {paragraph}{VS:}{19}{section*.25}%
-\contentsline {paragraph}{CM:}{19}{section*.26}%
-\contentsline {paragraph}{RA:}{19}{section*.27}%
-\contentsline {paragraph}{Fvl:}{19}{section*.28}%
-\contentsline {paragraph}{Fvs:}{19}{section*.29}%
-\contentsline {paragraph}{Fmor:}{19}{section*.30}%
-\contentsline {paragraph}{Resp:}{19}{section*.31}%
-\contentsline {paragraph}{Fhl:}{19}{section*.32}%
-\contentsline {paragraph}{Fhls:}{19}{section*.33}%
-\contentsline {paragraph}{Fhs:}{20}{section*.34}%
-\contentsline {paragraph}{dVL:}{20}{section*.35}%
-\contentsline {paragraph}{dVS:}{20}{section*.36}%
-\contentsline {paragraph}{dCM:}{20}{section*.37}%
-\contentsline {paragraph}{dHL:}{20}{section*.38}%
-\contentsline {paragraph}{dHS:}{20}{section*.39}%
-\contentsline {paragraph}{dRA:}{20}{section*.40}%
-\contentsline {section}{\numberline {2.3}\textit {GNU General Public License v2.0 (GPL-2.0) }}{20}{section.2.3}%
-\contentsline {chapter}{\numberline {3}Fundamentos Metodol\'ogicos}{21}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Enfoque de la investigaci\'on}{21}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Tipo o nivel de investigaci\'on}{21}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Dise\~no de la investigaci\'on}{22}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Metodolog\'ia}{23}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Aspectos administrativos}{24}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Desarrollo}{25}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Creaci\'on del esqueleto del paquete}{25}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Registrar el m\'etodo para el env\'io y uso de funciones}{29}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Dise\~no y codificaci\'on de las funciones}{32}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Pruebas unitarias de las funciones}{41}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Chequear la carga del paquete}{43}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Construcci\'on del m\'etodo de distribuci\'on del paquete}{43}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Conclusiones y Recomendaciones}{46}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Conclusiones}{46}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Recomendaciones}{46}{section.5.2}%
+\contentsline {chapter}{\numberline {1}El Problema}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Planteamiento y formulaci\'on del problema}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Objetivos}{4}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Objetivo General}{4}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Objetivos Espec\'ificos}{4}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Justificaci\'on e Importancia}{4}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Alcance y Limitaciones}{4}{section.1.4}%
+\contentsline {chapter}{\numberline {2}Fundamentos Te\'oricos}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Antecedentes}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Bases Te\'oricas}{6}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Modelos}{6}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Lenguaje R.}{8}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}RStudio.}{8}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Algoritmos en R/RStudio.}{9}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Estructura de paquetes en R/RStudio.}{10}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}Pruebas est\'andar y pruebas funcionales}{12}{subsection.2.2.6}%
+\contentsline {subsection}{\numberline {2.2.7}Glosario}{14}{subsection.2.2.7}%
+\contentsline {paragraph}{C\'odigo fuente:}{14}{section*.4}%
+\contentsline {paragraph}{Crecimiento:}{14}{section*.5}%
+\contentsline {paragraph}{Data:}{14}{section*.6}%
+\contentsline {paragraph}{Modelo:}{14}{section*.7}%
+\contentsline {paragraph}{Lenguaje R:}{14}{section*.8}%
+\contentsline {paragraph}{R Studio:}{14}{section*.9}%
+\contentsline {paragraph}{Necromasa:}{14}{section*.10}%
+\contentsline {paragraph}{HL:}{14}{section*.11}%
+\contentsline {paragraph}{HLo:}{14}{section*.12}%
+\contentsline {paragraph}{HS:}{14}{section*.13}%
+\contentsline {paragraph}{HSo:}{14}{section*.14}%
+\contentsline {paragraph}{Co:}{14}{section*.15}%
+\contentsline {paragraph}{Kvl:}{14}{section*.16}%
+\contentsline {paragraph}{Kvs:}{15}{section*.17}%
+\contentsline {paragraph}{fs:}{15}{section*.18}%
+\contentsline {paragraph}{Khl:}{15}{section*.19}%
+\contentsline {paragraph}{Khs:}{15}{section*.20}%
+\contentsline {paragraph}{Khls:}{15}{section*.21}%
+\contentsline {paragraph}{Kmb:}{15}{section*.22}%
+\contentsline {paragraph}{Kresp:}{15}{section*.23}%
+\contentsline {paragraph}{Ci:}{15}{section*.24}%
+\contentsline {paragraph}{VL:}{15}{section*.25}%
+\contentsline {paragraph}{VS:}{15}{section*.26}%
+\contentsline {paragraph}{CM:}{15}{section*.27}%
+\contentsline {paragraph}{RA:}{15}{section*.28}%
+\contentsline {paragraph}{Fvl:}{15}{section*.29}%
+\contentsline {paragraph}{Fvs:}{15}{section*.30}%
+\contentsline {paragraph}{Fmor:}{15}{section*.31}%
+\contentsline {paragraph}{Resp:}{15}{section*.32}%
+\contentsline {paragraph}{Fhl:}{15}{section*.33}%
+\contentsline {paragraph}{Fhls:}{15}{section*.34}%
+\contentsline {paragraph}{Fhs:}{16}{section*.35}%
+\contentsline {paragraph}{dVL:}{16}{section*.36}%
+\contentsline {paragraph}{dVS:}{16}{section*.37}%
+\contentsline {paragraph}{dCM:}{16}{section*.38}%
+\contentsline {paragraph}{dHL:}{16}{section*.39}%
+\contentsline {paragraph}{dHS:}{16}{section*.40}%
+\contentsline {paragraph}{dRA:}{16}{section*.41}%
+\contentsline {section}{\numberline {2.3}\textit {GNU General Public License v2.0 (GPL-2.0) }}{16}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Fundamentos Metodol\'ogicos}{17}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Enfoque de la investigaci\'on}{17}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Tipo o nivel de investigaci\'on}{17}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Dise\~no de la investigaci\'on}{18}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Metodolog\'ia}{19}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Aspectos administrativos}{20}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Desarrollo}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Creaci\'on del esqueleto del paquete}{21}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Registrar el m\'etodo para el env\'io y uso de funciones}{25}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Dise\~no y codificaci\'on de las funciones}{28}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Pruebas unitarias de las funciones}{37}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Chequear la carga del paquete}{39}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Construcci\'on del m\'etodo de distribuci\'on del paquete}{39}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Conclusiones y Recomendaciones}{42}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Conclusiones}{42}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Recomendaciones}{42}{section.5.2}%
