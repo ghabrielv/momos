@@ -157,7 +157,7 @@ calibrate_momos <- function(params = NULL) {
   # Getting experimental data
   experimental_data_url <- "https://github.com/ghabrielv/momos/raw/master/data/momos.xlsx"
   GET(experimental_data_url, write_disk(file <- tempfile(fileext = ".xlsx")))
-  experimental_data <<- read.xlsx(file, sheetIndex = 1)
+  experimental_data <<- read_excel(file, sheet = 1)
   names(experimental_data)=c("time","CM_experimental","RA_experimental")
 
   # parameter fitting using levenberg marquart algorithm
