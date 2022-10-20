@@ -31,13 +31,13 @@ get_params = function(params = NULL) {
   if(is.list(params)) {
     for(i in params) {
       if(!is.numeric(i)) {
-        message("All elements must be numeric")
+        message("Todos los elementos deben ser numericos")
         return(NA)
       }
     }
   } else {
     if(!is.null(params)) {
-      message("Parameters must be a list")
+      message("Los parametros deben ser una lista")
       return(NA)
     }
   }
@@ -155,9 +155,19 @@ calibrate_momos <- function(params = NULL) {
   }
 
   # Getting experimental data
-  experimental_data_url <- "https://github.com/ghabrielv/momos/raw/master/data/momos.xlsx"
-  GET(experimental_data_url, write_disk(file <- tempfile(fileext = ".xlsx")))
-  experimental_data <<- read_excel(file, sheet = 1)
+  print("Desea cargar los datos experimentales? (s/n) (nota: si responde s debera seleccionar un archivo")
+  is_file = readline();
+  if(tolower(is_file) == "s") {
+    experimental_data <<- read_excel(file.choose(), sheet = 1)
+  } else {
+    experimental_data_url <- "https://github.com/ghabrielv/momos/raw/master/data/momos.xlsx"
+    GET(experimental_data_url, write_disk(file <- tempfile(fileext = ".xlsx")))
+    experimental_data <<- read_excel(file, sheet = 1)
+  }
+
+  if(length(experimental_data) > 3) {
+    stop("El formato de los datos experimentales son incorrectos, solo debe tener 3 columnas: time, CM, RA")
+  }
   names(experimental_data)=c("time","CM_experimental","RA_experimental")
 
   # parameter fitting using levenberg marquart algorithm
